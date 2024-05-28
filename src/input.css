@@ -15,7 +15,7 @@
   width: 60px;
   height: 6px;
   border-radius: 3px;
-  background: #ff6550;
+  background: #8860d0;
 }
 
 .swiper-pagination-bullets.medical > .swiper-pagination-bullet {
@@ -47,7 +47,7 @@
   width: 60px;
   height: 6px;
   border-radius: 3px;
-  background: #ff6b00;
+  background: #8860d0;
 }
 
 @media (max-width: 600px) {
@@ -65,7 +65,7 @@
     width: 15px;
     height: 6px;
     border-radius: 3px;
-    background: #ff6b00;
+    background: #8860d0;
   }
 }
 

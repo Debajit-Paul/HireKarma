@@ -4,11 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hire</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body class="w-fill bg-[#2F2F2F]">
+  <body class="w-fill bg-[#F3F3F3]">
     <div class="flex flex-col justify-center items-center overflow-hidden">
-      <header class="fixed top-0 z-40 w-screen">
+      <header class="fixed top-0 z-40 w-screen drop-shadow-md">
         <nav
           class="w-full h-[60px] md:h-[69px] flex items-center justify-between md:justify-around px-[30px] md:pl-[60px] lg1:pl-[100px] md:pr-[60px] lg1:pr-[100px] absolute z-30 bg-white"
         >
@@ -141,9 +145,12 @@
         </nav>
       </header>
 
-      <main class="mt-[70px] w-screen flex flex-col items-center px-[25px]">
+      <main
+        class="mt-[70px] w-screen flex flex-col gap-[80px] items-center px-[25px]"
+      >
+        <!-- HERO -->
         <div
-          class="bg-[url('./img/hirekarma_hero.webp')] bg-no-repeat bg-cover w-[80%] h-[875px] my-[20px] flex flex-col items-center justify-center"
+          class="bg-[url('./img/hirekarma_hero.webp')] bg-no-repeat bg-cover mx-auto max-w-[75.5vw] w-full h-[44.1vw] my-[20px] flex flex-col items-center justify-center"
         >
           <div class="flex flex-col items-center gap-[20px]">
             <h2 class="text-white text-[40px] font-[500]">
@@ -162,10 +169,462 @@
               Get started
             </button>
           </div>
-          <div></div>
+
+          <div class="flex gap-[15px] mt-[20px]">
+            <div class="flex flex-col items-center">
+              <p class="text-white text-[20px]">250+ Opportunities created</p>
+              <img src="./img/Vector.webp" alt="" class="w-[8vw]" />
+            </div>
+            <p class="text-white text-[20px]">|</p>
+            <div class="flex flex-col items-center">
+              <p class="text-white text-[20px]">100+ Careers launched</p>
+              <img src="./img/Vector.webp" alt="" class="w-[8vw]" />
+            </div>
+            <p class="text-white text-[20px]">|</p>
+            <div class="flex flex-col items-center">
+              <p class="text-white text-[20px]">10K+ Trusted users</p>
+              <img src="./img/Vector.webp" alt="" class="w-[8vw]" />
+            </div>
+          </div>
+
+          <div class="flex mt-[50px] gap-[25px]">
+            <div
+              class="bg-[url('./img/hero_card_1.webp')] w-[12vw] h-[13.1vw] bg-no-repeat bg-cover pl-5 flex flex-col justify-evenly"
+            >
+              <p class="text-[#8860D0] text-[24px] font-[500] w-[6vw]">
+                Corporate Login
+              </p>
+              <p class="text-[#A4A4A4] text-[15px] font-[500] w-96vw]">
+                Torem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+              <div
+                class="flex items-center gap-2 p-[0.35rem] px-[1rem] rounded-full text-white bg-[#8860D0] w-[6.1vw]"
+              >
+                Explore
+                <img src="./img/Arrow.png" alt="" class="w-[1.4vw]" />
+              </div>
+            </div>
+
+            <div
+              class="bg-[url('./img/hero_card_2.webp')] w-[12vw] h-[13.1vw] bg-no-repeat bg-cover pl-5 flex flex-col justify-evenly"
+            >
+              <p class="text-[#8860D0] text-[24px] font-[500] w-[6vw]">
+                University Login
+              </p>
+              <p class="text-[#A4A4A4] text-[15px] font-[500] w-96vw]">
+                Torem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+              <div
+                class="flex items-center gap-2 p-[0.35rem] px-[1rem] rounded-full text-white bg-[#8860D0] w-[6.1vw]"
+              >
+                Explore
+                <img src="./img/Arrow.png" alt="" class="w-[1.4vw]" />
+              </div>
+            </div>
+
+            <div
+              class="bg-[url('./img/hero_card_3.webp')] w-[12vw] h-[13.1vw] bg-no-repeat bg-cover pl-5 flex flex-col justify-evenly"
+            >
+              <p class="text-[#8860D0] text-[24px] font-[500] w-[6vw]">
+                Student Login
+              </p>
+              <p class="text-[#A4A4A4] text-[15px] font-[500] w-96vw]">
+                Torem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+              <div
+                class="flex items-center gap-2 p-[0.35rem] px-[1rem] rounded-full text-white bg-[#8860D0] w-[6.1vw]"
+              >
+                Explore
+                <img src="./img/Arrow.png" alt="" class="w-[1.4vw]" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ABOUT US -->
+        <div class="flex flex-col items-center">
+          <h2 class="text-[#8860D0] text-[40px] font-[500]">About us</h2>
+          <div
+            class="flex items-center justify-between max-w-[1440px] mx-auto px-[50px]"
+          >
+            <div class="flex flex-col">
+              <div class="flex flex-col gap-3">
+                <p class="w-[32vw] text-[20px] text-[#736E6E]">
+                  Corem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+                  vulputate libero et velit interdum, ac aliquet odio mattis.
+                  Class aptent taciti sociosqu ad litora torquent per conubia
+                  nostra, per inceptos himenaeos.
+                </p>
+                <p class="w-[32vw] text-[20px] text-[#736E6E]">
+                  Corem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+                  vulputate libero et velit interdum, ac aliquet odio mattis.
+                  Class aptent taciti sociosqu ad litora torquent per conubia
+                  nostra, per inceptos himenaeos.
+                </p>
+              </div>
+              <button
+                class="text-[#8860D0] border border-[#8860D0] p-[0.75rem] px-[1rem] w-[8.5vw] mt-[40px] rounded-xl"
+              >
+                Know more
+              </button>
+            </div>
+            <img src="./img/about_girl.webp" alt="" class="w-[50%]" />
+          </div>
+        </div>
+
+        <!-- OUR SERVICES -->
+        <div class="flex flex-col items-center">
+          <h2 class="text-[#8860D0] text-[40px] font-[500]">Our services</h2>
+          <div
+            class="w-screen h-[730px] p-8 pl-[18rem] bg-[#8860D0] mt-[15px] relative mb-3"
+          >
+            <div class="flex flex-col gap-6">
+              <div class="flex flex-col">
+                <p class="font-[700] text-[20px]">
+                  End-to-end virtual campus hiring
+                </p>
+                <p class="text-white test-[15px] w-[18vw] mt-2">
+                  Complete automation, right from - outreach to 24,000 campuses,
+                  engagement, assessments, virtual interviews to industry
+                  benchmarking and analytics.
+                </p>
+                <div
+                  class="flex items-center gap-2 p-[0.35rem] px-[1.2rem] rounded-full text-[15px] text-black font-[500] bg-[#FBBC05] w-[4.6vw] mt-5"
+                >
+                  Explore
+                </div>
+              </div>
+              <span class="border border-white w-[9.5vw]"></span>
+              <div class="flex flex-col">
+                <p class="font-[700] text-[20px]">
+                  End-to-end virtual campus hiring
+                </p>
+                <p class="text-white test-[15px] w-[18vw] mt-2">
+                  Complete automation, right from - outreach to 24,000 campuses,
+                  engagement, assessments, virtual interviews to industry
+                  benchmarking and analytics.
+                </p>
+                <div
+                  class="flex items-center gap-2 p-[0.35rem] px-[1.2rem] rounded-full text-[15px] text-black font-[500] bg-[#FBBC05] w-[4.6vw] mt-5"
+                >
+                  Explore
+                </div>
+              </div>
+              <span class="border border-white w-[9.5vw]"></span>
+
+              <div class="flex flex-col">
+                <p class="font-[700] text-[20px]">
+                  End-to-end virtual campus hiring
+                </p>
+                <p class="text-white test-[15px] w-[18vw] mt-2">
+                  Complete automation, right from - outreach to 24,000 campuses,
+                  engagement, assessments, virtual interviews to industry
+                  benchmarking and analytics.
+                </p>
+                <div
+                  class="flex items-center gap-2 p-[0.35rem] px-[1.2rem] rounded-full text-[15px] text-black font-[500] bg-[#FBBC05] w-[4.6vw] mt-5"
+                >
+                  Explore
+                </div>
+              </div>
+            </div>
+            <img
+              src="./img/jumping_job_man.webp"
+              alt=""
+              class="w-[796px] h-[920px] absolute right-[160px] top-[-90px]"
+            />
+          </div>
+        </div>
+
+        <!-- OUR SERVICES -->
+        <div class="flex flex-col items-center">
+          <h2 class="text-[#8860D0] text-[40px] font-[500]">Our clients</h2>
+          <div class="w-[1440px] mx-auto p-5">
+            <img src="./img/clients.webp" alt="" class="w-screen h-[200px]" />
+          </div>
+        </div>
+
+        <!-- Our university partners -->
+        <div class="flex flex-col items-center w-screen bg-[#E1E1E1]">
+          <h2 class="text-[#8860D0] text-[40px] font-[500] mt-[50px]">
+            Our university partners
+          </h2>
+          <div class="p-5">
+            <img src="./img/university.webp" alt="" class="w-full h-[500px]" />
+          </div>
+        </div>
+
+        <!-- Hear from our HRs, TPOs & Students -->
+        <div class="flex flex-col items-center w-full">
+          <h2 class="text-[#8860D0] text-[40px] font-[500]">
+            Hear from our HRs, TPOs & Students
+          </h2>
+          <div class="swiper anime w-[80%] lg1:w-[85%] my-[30px] md:my-[65px]">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide flex justify-center">
+                <div class="h-[350px]">
+                  <div
+                    class="w-[300px] h-[300px] rounded-full bg-white cursor-grab flex flex-col items-center justify-evenly p-8"
+                  >
+                    <img
+                      src="./img/avatar.webp"
+                      alt=""
+                      class="rounded-full w-[4.5rem] h-[4.5rem]"
+                    />
+                    <p class="text-[16px] font-[500] text-[#8860D0]">
+                      Jack Adam
+                    </p>
+                    <p
+                      class="text-[#736E6E] text-[14.5px] w-[14.1vw] leading-[20px] text-center h-[90px]"
+                    >
+                      Corem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Nunc vulputate libero et velit interdum, ac aliquet odio
+                      mattis. Class aptent taciti
+                    </p>
+                    <img
+                      src="./img/x.webp"
+                      alt=""
+                      class="w-[0.75rem] h-[0.75rem]"
+                    />
+                    <p class="text-[12px]">Operation manager</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide flex justify-center">
+                <div class="h-[350px]">
+                  <div
+                    class="w-[300px] h-[300px] rounded-full bg-white cursor-grab flex flex-col items-center justify-evenly p-8"
+                  >
+                    <img
+                      src="./img/avatar.webp"
+                      alt=""
+                      class="rounded-full w-[4.5rem] h-[4.5rem]"
+                    />
+                    <p class="text-[16px] font-[500] text-[#8860D0]">
+                      Jack Adam
+                    </p>
+                    <p
+                      class="text-[#736E6E] text-[14.5px] w-[14.1vw] leading-[20px] text-center h-[90px]"
+                    >
+                      Corem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Nunc vulputate libero et velit interdum, ac aliquet odio
+                      mattis. Class aptent taciti
+                    </p>
+                    <img
+                      src="./img/x.webp"
+                      alt=""
+                      class="w-[0.75rem] h-[0.75rem]"
+                    />
+                    <p class="text-[12px]">Operation manager</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide flex justify-center">
+                <div class="h-[350px]">
+                  <div
+                    class="w-[300px] h-[300px] rounded-full bg-white cursor-grab flex flex-col items-center justify-evenly p-8"
+                  >
+                    <img
+                      src="./img/avatar.webp"
+                      alt=""
+                      class="rounded-full w-[4.5rem] h-[4.5rem]"
+                    />
+                    <p class="text-[16px] font-[500] text-[#8860D0]">
+                      Jack Adam
+                    </p>
+                    <p
+                      class="text-[#736E6E] text-[14.5px] w-[14.1vw] leading-[20px] text-center h-[90px]"
+                    >
+                      Corem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Nunc vulputate libero et velit interdum, ac aliquet odio
+                      mattis. Class aptent taciti
+                    </p>
+                    <img
+                      src="./img/x.webp"
+                      alt=""
+                      class="w-[0.75rem] h-[0.75rem]"
+                    />
+                    <p class="text-[12px]">Operation manager</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide flex justify-center">
+                <div class="h-[350px]">
+                  <div
+                    class="w-[300px] h-[300px] rounded-full bg-white cursor-grab flex flex-col items-center justify-evenly p-8"
+                  >
+                    <img
+                      src="./img/avatar.webp"
+                      alt=""
+                      class="rounded-full w-[4.5rem] h-[4.5rem]"
+                    />
+                    <p class="text-[16px] font-[500] text-[#8860D0]">
+                      Jack Adam
+                    </p>
+                    <p
+                      class="text-[#736E6E] text-[14.5px] w-[14.1vw] leading-[20px] text-center h-[90px]"
+                    >
+                      Corem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Nunc vulputate libero et velit interdum, ac aliquet odio
+                      mattis. Class aptent taciti
+                    </p>
+                    <img
+                      src="./img/x.webp"
+                      alt=""
+                      class="w-[0.75rem] h-[0.75rem]"
+                    />
+                    <p class="text-[12px]">Operation manager</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide flex justify-center">
+                <div class="h-[350px]">
+                  <div
+                    class="w-[300px] h-[300px] rounded-full bg-white cursor-grab flex flex-col items-center justify-evenly p-8"
+                  >
+                    <img
+                      src="./img/avatar.webp"
+                      alt=""
+                      class="rounded-full w-[4.5rem] h-[4.5rem]"
+                    />
+                    <p class="text-[16px] font-[500] text-[#8860D0]">
+                      Jack Adam
+                    </p>
+                    <p
+                      class="text-[#736E6E] text-[14.5px] w-[14.1vw] leading-[20px] text-center h-[90px]"
+                    >
+                      Corem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Nunc vulputate libero et velit interdum, ac aliquet odio
+                      mattis. Class aptent taciti
+                    </p>
+                    <img
+                      src="./img/x.webp"
+                      alt=""
+                      class="w-[0.75rem] h-[0.75rem]"
+                    />
+                    <p class="text-[12px]">Operation manager</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide flex justify-center">
+                <div class="h-[350px]">
+                  <div
+                    class="w-[300px] h-[300px] rounded-full bg-white cursor-grab flex flex-col items-center justify-evenly p-8"
+                  >
+                    <img
+                      src="./img/avatar.webp"
+                      alt=""
+                      class="rounded-full w-[4.5rem] h-[4.5rem]"
+                    />
+                    <p class="text-[16px] font-[500] text-[#8860D0]">
+                      Jack Adam
+                    </p>
+                    <p
+                      class="text-[#736E6E] text-[14.5px] w-[14.1vw] leading-[20px] text-center h-[90px]"
+                    >
+                      Corem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Nunc vulputate libero et velit interdum, ac aliquet odio
+                      mattis. Class aptent taciti
+                    </p>
+                    <img
+                      src="./img/x.webp"
+                      alt=""
+                      class="w-[0.75rem] h-[0.75rem]"
+                    />
+                    <p class="text-[12px]">Operation manager</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination animePagination"></div>
+          </div>
+        </div>
+
+        <!-- FOOTER -->
+        <div class="flex flex-col w-screen bg-[#E1E1E1] py-20 px-[14.5rem]">
+          <div class="flex flex-col">
+            <img
+              src="./img/hirekarma_logo.webp"
+              alt=""
+              class="w-[160px] h-[53px] cursor-pointer"
+            />
+            <p class="text-[#1C1B1F] text-[18px] w-[45vw] my-[20px]">
+              Corem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+              vulputate libero et velit interdum, ac aliquet odio mattis. Class
+              aptent taciti sociosqu ad litora torquent per conubia nostra, per
+              inceptos himenaeos.
+            </p>
+          </div>
+          <div class="grid grid-cols-7 mt-[20px]">
+            <ul class="flex flex-col gap-4">
+              <h3 class="mt-2 text-[#8860D0] text-[20px] font-[500]">
+                University
+              </h3>
+              <li class="text-[15px] font-[600] cursor-pointer">Sign up</li>
+              <li class="text-[15px] font-[600] cursor-pointer">Testimony</li>
+              <li class="text-[15px] font-[600] cursor-pointer">Contact</li>
+            </ul>
+
+            <ul class="flex flex-col gap-4">
+              <h3 class="mt-2 text-[#8860D0] text-[20px] font-[500]">
+                Employee
+              </h3>
+              <li class="text-[15px] font-[600] cursor-pointer">
+                Start hiring
+              </li>
+              <li class="text-[15px] font-[600] cursor-pointer">Schedule</li>
+              <li class="text-[15px] font-[600] cursor-pointer">
+                Call with sales team
+              </li>
+            </ul>
+
+            <ul class="flex flex-col gap-4">
+              <h3 class="mt-2 text-[#8860D0] text-[20px] font-[500]">
+                Students
+              </h3>
+              <li class="text-[15px] font-[600] cursor-pointer">Support</li>
+              <li class="text-[15px] font-[600] cursor-pointer">Login</li>
+              <li class="text-[15px] font-[600] cursor-pointer">Sign up</li>
+            </ul>
+          </div>
+          <div class="flex justify-end gap-6 mt-[50px]">
+            <a href="" class="cursor-pointer">
+              <img src="./img/insta.png" alt="" class="w-8 h-8" />
+            </a>
+            <a href="" class="cursor-pointer">
+              <img src="./img/linkedin.png" alt="" class="w-8 h-8" />
+            </a>
+            <a href="" class="cursor-pointer">
+              <img src="./img/fb.png" alt="" class="w-8 h-8" />
+            </a>
+          </div>
         </div>
       </main>
     </div>
   </body>
-  <script src="./script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".anime", {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        renderBullet: function (index, className) {
+          return '<span class="' + className + '">' + "</span>";
+        },
+      },
+      breakpoints: {
+        768: {
+          slidesPerView: 2,
+        },
+        870: {
+          slidesPerView: 3,
+        },
+        1040: {
+          slidesPerView: 4,
+        },
+      },
+    });
+  </script>
 </html>
