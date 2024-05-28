@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hire</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="w-fill bg-[#2F2F2F]">
+    <div class="flex flex-col justify-center items-center overflow-hidden">
+      <header class="fixed top-0 z-40 w-screen">
+        <nav
+          class="w-full h-[60px] md:h-[69px] flex items-center justify-between md:justify-around px-[30px] md:pl-[60px] lg1:pl-[100px] md:pr-[60px] lg1:pr-[100px] absolute z-30 bg-white"
+        >
+          <img
+            src="./img/hirekarma_logo.webp"
+            alt=""
+            class="w-[160px] h-[53px]"
+          />
+
+          <!-- Desktop menu -->
+          <ul
+            class="list-none hidden md:flex justify-between items-center h-[41px] gap-[32px]"
+          >
+            <li class="text-[14px] font-[400] cursor-pointer">Home</li>
+            <li
+              class="flex items-center text-[14px] font-[400] cursor-pointer gap-[6px]"
+            >
+              Category
+            </li>
+            <li class="text-[14px] font-[400] cursor-pointer">University</li>
+            <li class="text-[14px] font-[400] cursor-pointer">Students</li>
+            <li class="text-[14px] font-[400] cursor-pointer">Employees</li>
+            <li class="text-[14px] font-[400] cursor-pointer">Contacts us</li>
+          </ul>
+
+          <div class="hidden md:flex items-center gap-[12px]">
+            <button
+              class="w-[80px] lg1:w-[104px] h-[33px] bg-[#f0e600] rounded-[16.5px] text-black text-[12px] lg1:text-[14px]"
+              onclick="signIn(true)"
+            >
+              Login
+            </button>
+            <button
+              class="w-[80px] lg1:w-[104px] h-[33px] bg-white rounded-[16.5px] text-black text-[12px] lg1:text-[14px] border-[#f0e600] border-2"
+            >
+              Register
+            </button>
+          </div>
+
+          <!-- Mobile menu -->
+          <div
+            id="mobile-menu"
+            class="md:hidden block absolute z-10 w-[90%] top-[60px] left-[800px] transition-all duration-500 ease-in-out"
+          >
+            <div
+              class="flex flex-col items-center pt-2 w-[90%] h-[calc(100vh-60px)] text-[19px] font-[400] bg-[#2F2F2F]/70 backdrop-blur-lg border-t text-white"
+            >
+              <ul
+                class="w-[92%] flex flex-col items-center mt-[30px] gap-[10px]"
+              >
+                <li
+                  class="py-3 w-[80%] flex items-center gap-[20px] hover:bg-[#FF6B00] rounded-[15px] pl-[30px]"
+                >
+                  <img
+                    src="./img/anime/home.png"
+                    alt=""
+                    class="w-[30px] h-[30px]"
+                  />
+                  Home
+                </li>
+                <li
+                  class="py-3 w-[80%] flex items-center gap-[20px] hover:bg-[#FF6B00] rounded-[15px] pl-[30px]"
+                >
+                  <img
+                    src="./img/anime/categories.png"
+                    alt=""
+                    class="w-[30px] h-[30px]"
+                  />
+                  Category
+                </li>
+                <li
+                  class="py-3 w-[80%] flex items-center gap-[20px] hover:bg-[#FF6B00] rounded-[15px] pl-[30px]"
+                >
+                  <img
+                    src="./img/anime/manga.png"
+                    alt=""
+                    class="w-[30px] h-[30px]"
+                  />
+                  Manga List
+                </li>
+                <li
+                  class="py-3 w-[80%] flex items-center gap-[20px] hover:bg-[#FF6B00] rounded-[15px] pl-[30px]"
+                >
+                  <img
+                    src="./img/anime/favorite.png"
+                    alt=""
+                    class="w-[30px] h-[30px]"
+                  />
+                  Favourites
+                </li>
+              </ul>
+
+              <div
+                class="w-[68%] ml-[5px] mt-[65px] gap-[20px] flex items-center"
+              >
+                <p
+                  class="text-white text-[18px] font-[400] flex items-center gap-[10px]"
+                  onclick="signIn(true)"
+                >
+                  <img
+                    src="./img/anime/signature.png"
+                    alt=""
+                    class="w-[28px] h-[28px]"
+                  />Sign in
+                </p>
+                <p
+                  class="text-white text-[18px] font-[400] flex items-center gap-[10px]"
+                >
+                  <img
+                    src="./img/anime/login.png"
+                    alt=""
+                    class="w-[28px] h-[28px]"
+                  />Register
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="w-8 md:w-12 h-8 md:h-12 rounded-full flex md:hidden justify-center items-center hover:bg-black/[0.1] cursor-pointer relative -mr-2"
+            onclick="menuToggle()"
+          >
+            <img
+              id="hammenu-btn"
+              src="./img/hamburger.svg"
+              alt="hamMenu"
+              class="text-[20px] transition-all duration-500 ease-in-out rotate-0"
+            />
+          </div>
+        </nav>
+      </header>
+
+      <main class="mt-[70px] w-screen flex flex-col items-center px-[25px]">
+        <div
+          class="bg-[url('./img/hirekarma_hero.webp')] bg-no-repeat bg-cover w-[80%] h-[875px] my-[20px] flex flex-col items-center justify-center"
+        >
+          <div class="flex flex-col items-center gap-[20px]">
+            <h2 class="text-white text-[40px] font-[500]">
+              Unleash your potential, find your perfect fit!
+            </h2>
+            <p class="text-white text-[16px] font-[300] w-[32vw] text-center">
+              Corem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+              vulputate libero et velit interdum, ac aliquet odio mattis. Class
+              aptent taciti sociosqu ad litora torquent per conubia nostra, per
+              inceptos himenaeos.
+            </p>
+
+            <button
+              class="bg-[#FBBC05] w-[175px] h-[53px] text-[23px] font-[600] rounded-full"
+            >
+              Get started
+            </button>
+          </div>
+          <div></div>
+        </div>
+      </main>
+    </div>
+  </body>
+  <script src="./script.js"></script>
+</html>
