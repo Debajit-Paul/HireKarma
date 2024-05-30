@@ -24,7 +24,7 @@
 
           <!-- Desktop menu -->
           <ul
-            class="list-none hidden md:flex justify-between items-center h-[41px] gap-[32px]"
+            class="list-none hidden md:grid grid-cols-6 justify-items-center justify-between items-center h-[41px] gap-[12px]"
           >
             <li class="text-[14px] font-[400] cursor-pointer">Home</li>
             <li
@@ -52,92 +52,12 @@
             </button>
           </div>
 
-          <!-- Mobile menu -->
           <div
-            id="mobile-menu"
-            class="md:hidden block absolute z-10 w-[90%] top-[60px] left-[800px] transition-all duration-500 ease-in-out"
-          >
-            <div
-              class="flex flex-col items-center pt-2 w-[90%] h-[calc(100vh-60px)] text-[19px] font-[400] bg-[#2F2F2F]/70 backdrop-blur-lg border-t text-white"
-            >
-              <ul
-                class="w-[92%] flex flex-col items-center mt-[30px] gap-[10px]"
-              >
-                <li
-                  class="py-3 w-[80%] flex items-center gap-[20px] hover:bg-[#FF6B00] rounded-[15px] pl-[30px]"
-                >
-                  <img
-                    src="./img/anime/home.png"
-                    alt=""
-                    class="w-[30px] h-[30px]"
-                  />
-                  Home
-                </li>
-                <li
-                  class="py-3 w-[80%] flex items-center gap-[20px] hover:bg-[#FF6B00] rounded-[15px] pl-[30px]"
-                >
-                  <img
-                    src="./img/anime/categories.png"
-                    alt=""
-                    class="w-[30px] h-[30px]"
-                  />
-                  Category
-                </li>
-                <li
-                  class="py-3 w-[80%] flex items-center gap-[20px] hover:bg-[#FF6B00] rounded-[15px] pl-[30px]"
-                >
-                  <img
-                    src="./img/anime/manga.png"
-                    alt=""
-                    class="w-[30px] h-[30px]"
-                  />
-                  Manga List
-                </li>
-                <li
-                  class="py-3 w-[80%] flex items-center gap-[20px] hover:bg-[#FF6B00] rounded-[15px] pl-[30px]"
-                >
-                  <img
-                    src="./img/anime/favorite.png"
-                    alt=""
-                    class="w-[30px] h-[30px]"
-                  />
-                  Favourites
-                </li>
-              </ul>
-
-              <div
-                class="w-[68%] ml-[5px] mt-[65px] gap-[20px] flex items-center"
-              >
-                <p
-                  class="text-white text-[18px] font-[400] flex items-center gap-[10px]"
-                  onclick="signIn(true)"
-                >
-                  <img
-                    src="./img/anime/signature.png"
-                    alt=""
-                    class="w-[28px] h-[28px]"
-                  />Sign in
-                </p>
-                <p
-                  class="text-white text-[18px] font-[400] flex items-center gap-[10px]"
-                >
-                  <img
-                    src="./img/anime/login.png"
-                    alt=""
-                    class="w-[28px] h-[28px]"
-                  />Register
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div
-            class="w-8 md:w-12 h-8 md:h-12 rounded-full flex md:hidden justify-center items-center hover:bg-black/[0.1] cursor-pointer relative -mr-2"
-            onclick="menuToggle()"
+            class="w-8 md:w-12 h-8 md:h-12 rounded-full flex md:hidden justify-center items-center cursor-pointer relative -mr-2"
           >
             <img
               id="hammenu-btn"
-              src="./img/hamburger.svg"
+              src="./img/hamburger.png"
               alt="hamMenu"
               class="text-[20px] transition-all duration-500 ease-in-out rotate-0"
             />
@@ -146,17 +66,23 @@
       </header>
 
       <main
-        class="mt-[70px] w-screen flex flex-col gap-[80px] items-center px-[25px]"
+        class="mt-[70px] w-screen flex flex-col gap-[80px] items-center px-[12px] md:px-[25px]"
       >
         <!-- HERO -->
         <div
-          class="bg-[url('./img/hirekarma_hero.webp')] bg-no-repeat bg-cover mx-auto max-w-[75.5vw] w-full h-[44.1vw] my-[20px] flex flex-col items-center justify-center"
+          class="bg-[url('./img/hirekarma_hero.webp')] bg-no-repeat bg-contain mx-auto max-w-[94.5vw] md:max-w-[1440px] w-full h-[54.7vw] md:h-[860px] my-[20px] flex flex-col items-center"
         >
-          <div class="flex flex-col items-center gap-[20px]">
-            <h2 class="text-white text-[40px] font-[500]">
+          <div
+            class="flex flex-col items-center gap-[8px] sm:gap-[20px] mt-[1.5rem] sm:mt-[5.5rem] md:mt-[12rem]"
+          >
+            <h2
+              class="text-white text-[14px] sm:text-[22px] md:text-[40px] font-[500]"
+            >
               Unleash your potential, find your perfect fit!
             </h2>
-            <p class="text-white text-[16px] font-[300] w-[32vw] text-center">
+            <p
+              class="text-white text-[11px] sm:text-[17px] md:text-[16px] font-[300] w-[71.9vw] md:w-[32vw] text-center"
+            >
               Corem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
               vulputate libero et velit interdum, ac aliquet odio mattis. Class
               aptent taciti sociosqu ad litora torquent per conubia nostra, per
@@ -164,98 +90,134 @@
             </p>
 
             <button
-              class="bg-[#FBBC05] w-[175px] h-[53px] text-[23px] font-[600] rounded-full"
+              class="bg-[#FBBC05] w-[87px] sm:w-[122px] md:w-[175px] h-[25px] sm:h-[39px] md:h-[53px] text-[10.5px] sm:text-[15.5px] md:text-[23px] font-[600] rounded-full"
             >
               Get started
             </button>
           </div>
 
-          <div class="flex gap-[15px] mt-[20px]">
+          <div class="flex gap-[3px] md:gap-[15px] mt-[12px] md:mt-[20px]">
             <div class="flex flex-col items-center">
-              <p class="text-white text-[20px]">250+ Opportunities created</p>
+              <p class="text-white text-[9px] sm:text-[18px] md:text-[24px]">
+                250+ Opportunities created
+              </p>
               <img src="./img/Vector.webp" alt="" class="w-[8vw]" />
             </div>
-            <p class="text-white text-[20px]">|</p>
+            <p class="text-white text-[9px] sm:text-[18px] md:text-[24px]">|</p>
             <div class="flex flex-col items-center">
-              <p class="text-white text-[20px]">100+ Careers launched</p>
+              <p class="text-white text-[9px] sm:text-[18px] md:text-[24px]">
+                100+ Careers launched
+              </p>
               <img src="./img/Vector.webp" alt="" class="w-[8vw]" />
             </div>
-            <p class="text-white text-[20px]">|</p>
+            <p class="text-white text-[9px] sm:text-[18px] md:text-[24px]">|</p>
             <div class="flex flex-col items-center">
-              <p class="text-white text-[20px]">10K+ Trusted users</p>
+              <p class="text-white text-[9px] sm:text-[18px] md:text-[24px]">
+                10K+ Trusted users
+              </p>
               <img src="./img/Vector.webp" alt="" class="w-[8vw]" />
             </div>
           </div>
 
-          <div class="flex mt-[50px] gap-[25px]">
+          <div class="grid grid-cols-1 sm:grid-cols-3 mt-[50px] gap-[25px]">
             <div
-              class="bg-[url('./img/hero_card_1.webp')] w-[12vw] h-[13.1vw] bg-no-repeat bg-cover pl-5 flex flex-col justify-evenly"
+              class="bg-[url('./img/hero_card_1.webp')] w-[51.4vw] md:w-[12vw] h-[56vw] md:h-[13.1vw] bg-no-repeat bg-cover pl-5 flex flex-col justify-evenly"
             >
-              <p class="text-[#8860D0] text-[24px] font-[500] w-[6vw]">
+              <p
+                class="text-[#8860D0] text-[20px] md:text-[24px] font-[500] w-[7vw] md:w-[6vw]"
+              >
                 Corporate Login
               </p>
-              <p class="text-[#A4A4A4] text-[15px] font-[500] w-96vw]">
+              <p
+                class="text-[#A4A4A4] text-[13px] md:text-[15px] font-[500] w-[37vw] md:w-[12vw]"
+              >
                 Torem ipsum dolor sit amet, consectetur adipiscing elit.
               </p>
               <div
-                class="flex items-center gap-2 p-[0.35rem] px-[1rem] rounded-full text-white bg-[#8860D0] w-[6.1vw]"
+                class="flex items-center gap-2 p-[0.35rem] px-[1rem] rounded-full text-white bg-[#8860D0] w-[28.1vw] md:w-[6.1vw]"
               >
                 Explore
-                <img src="./img/Arrow.png" alt="" class="w-[1.4vw]" />
+                <img
+                  src="./img/Arrow.png"
+                  alt=""
+                  class="w-[5.4vw] md:w-[1.4vw]"
+                />
               </div>
             </div>
 
             <div
-              class="bg-[url('./img/hero_card_2.webp')] w-[12vw] h-[13.1vw] bg-no-repeat bg-cover pl-5 flex flex-col justify-evenly"
+              class="bg-[url('./img/hero_card_2.webp')] w-[51.4vw] md:w-[12vw] h-[56vw] md:h-[13.1vw] bg-no-repeat bg-cover pl-5 flex flex-col justify-evenly"
             >
-              <p class="text-[#8860D0] text-[24px] font-[500] w-[6vw]">
+              <p
+                class="text-[#8860D0] text-[20px] md:text-[24px] font-[500] w-[7vw] md:w-[6vw]"
+              >
                 University Login
               </p>
-              <p class="text-[#A4A4A4] text-[15px] font-[500] w-96vw]">
+              <p
+                class="text-[#A4A4A4] text-[13px] md:text-[15px] font-[500] w-[37vw] md:w-[12vw]"
+              >
                 Torem ipsum dolor sit amet, consectetur adipiscing elit.
               </p>
               <div
-                class="flex items-center gap-2 p-[0.35rem] px-[1rem] rounded-full text-white bg-[#8860D0] w-[6.1vw]"
+                class="flex items-center gap-2 p-[0.35rem] px-[1rem] rounded-full text-white bg-[#8860D0] w-[28.1vw] md:w-[6.1vw]"
               >
                 Explore
-                <img src="./img/Arrow.png" alt="" class="w-[1.4vw]" />
+                <img
+                  src="./img/Arrow.png"
+                  alt=""
+                  class="w-[5.4vw] md:w-[1.4vw]"
+                />
               </div>
             </div>
 
             <div
-              class="bg-[url('./img/hero_card_3.webp')] w-[12vw] h-[13.1vw] bg-no-repeat bg-cover pl-5 flex flex-col justify-evenly"
+              class="bg-[url('./img/hero_card_3.webp')] w-[51.4vw] md:w-[12vw] h-[56vw] md:h-[13.1vw] bg-no-repeat bg-cover pl-5 flex flex-col justify-evenly"
             >
-              <p class="text-[#8860D0] text-[24px] font-[500] w-[6vw]">
+              <p
+                class="text-[#8860D0] text-[20px] md:text-[24px] font-[500] w-[7vw] md:w-[6vw]"
+              >
                 Student Login
               </p>
-              <p class="text-[#A4A4A4] text-[15px] font-[500] w-96vw]">
+              <p
+                class="text-[#A4A4A4] text-[13px] md:text-[15px] font-[500] w-[37vw] md:w-[12vw]"
+              >
                 Torem ipsum dolor sit amet, consectetur adipiscing elit.
               </p>
               <div
-                class="flex items-center gap-2 p-[0.35rem] px-[1rem] rounded-full text-white bg-[#8860D0] w-[6.1vw]"
+                class="flex items-center gap-2 p-[0.35rem] px-[1rem] rounded-full text-white bg-[#8860D0] w-[28.1vw] md:w-[6.1vw]"
               >
                 Explore
-                <img src="./img/Arrow.png" alt="" class="w-[1.4vw]" />
+                <img
+                  src="./img/Arrow.png"
+                  alt=""
+                  class="w-[5.4vw] md:w-[1.4vw]"
+                />
               </div>
             </div>
           </div>
         </div>
 
         <!-- ABOUT US -->
-        <div class="flex flex-col items-center">
-          <h2 class="text-[#8860D0] text-[40px] font-[500]">About us</h2>
+        <div class="flex flex-col items-center mt-[40rem] md:mt-0">
+          <h2 class="text-[#8860D0] text-[30px] md:text-[40px] font-[500]">
+            About us
+          </h2>
           <div
-            class="flex items-center justify-between max-w-[1440px] mx-auto px-[50px]"
+            class="flex flex-col-reverse md:flex-row items-center justify-between max-w-[1440px] mx-auto px-[50px]"
           >
-            <div class="flex flex-col">
+            <div class="flex flex-col items-center md:items-start">
               <div class="flex flex-col gap-3">
-                <p class="w-[32vw] text-[20px] text-[#736E6E]">
+                <p
+                  class="w-[90vw] md:w-[500px] text-center md:text-left text-[14px] md:text-[20px] text-[#736E6E]"
+                >
                   Corem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
                   vulputate libero et velit interdum, ac aliquet odio mattis.
                   Class aptent taciti sociosqu ad litora torquent per conubia
                   nostra, per inceptos himenaeos.
                 </p>
-                <p class="w-[32vw] text-[20px] text-[#736E6E]">
+                <p
+                  class="w-[90vw] md:w-[500px] text-center md:text-left text-[14px] md:text-[20px] text-[#736E6E]"
+                >
                   Corem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
                   vulputate libero et velit interdum, ac aliquet odio mattis.
                   Class aptent taciti sociosqu ad litora torquent per conubia
@@ -263,103 +225,308 @@
                 </p>
               </div>
               <button
-                class="text-[#8860D0] border border-[#8860D0] p-[0.75rem] px-[1rem] w-[8.5vw] mt-[40px] rounded-xl"
+                class="text-[#8860D0] border border-[#8860D0] p-[0.75rem] px-[1rem] w-[130px] mt-[40px] rounded-xl"
               >
                 Know more
               </button>
             </div>
-            <img src="./img/about_girl.webp" alt="" class="w-[50%]" />
-          </div>
-        </div>
-
-        <!-- OUR SERVICES -->
-        <div class="flex flex-col items-center">
-          <h2 class="text-[#8860D0] text-[40px] font-[500]">Our services</h2>
-          <div
-            class="w-screen h-[730px] p-8 pl-[18rem] bg-[#8860D0] mt-[15px] relative mb-3"
-          >
-            <div class="flex flex-col gap-6">
-              <div class="flex flex-col">
-                <p class="font-[700] text-[20px]">
-                  End-to-end virtual campus hiring
-                </p>
-                <p class="text-white test-[15px] w-[18vw] mt-2">
-                  Complete automation, right from - outreach to 24,000 campuses,
-                  engagement, assessments, virtual interviews to industry
-                  benchmarking and analytics.
-                </p>
-                <div
-                  class="flex items-center gap-2 p-[0.35rem] px-[1.2rem] rounded-full text-[15px] text-black font-[500] bg-[#FBBC05] w-[4.6vw] mt-5"
-                >
-                  Explore
-                </div>
-              </div>
-              <span class="border border-white w-[9.5vw]"></span>
-              <div class="flex flex-col">
-                <p class="font-[700] text-[20px]">
-                  End-to-end virtual campus hiring
-                </p>
-                <p class="text-white test-[15px] w-[18vw] mt-2">
-                  Complete automation, right from - outreach to 24,000 campuses,
-                  engagement, assessments, virtual interviews to industry
-                  benchmarking and analytics.
-                </p>
-                <div
-                  class="flex items-center gap-2 p-[0.35rem] px-[1.2rem] rounded-full text-[15px] text-black font-[500] bg-[#FBBC05] w-[4.6vw] mt-5"
-                >
-                  Explore
-                </div>
-              </div>
-              <span class="border border-white w-[9.5vw]"></span>
-
-              <div class="flex flex-col">
-                <p class="font-[700] text-[20px]">
-                  End-to-end virtual campus hiring
-                </p>
-                <p class="text-white test-[15px] w-[18vw] mt-2">
-                  Complete automation, right from - outreach to 24,000 campuses,
-                  engagement, assessments, virtual interviews to industry
-                  benchmarking and analytics.
-                </p>
-                <div
-                  class="flex items-center gap-2 p-[0.35rem] px-[1.2rem] rounded-full text-[15px] text-black font-[500] bg-[#FBBC05] w-[4.6vw] mt-5"
-                >
-                  Explore
-                </div>
-              </div>
-            </div>
             <img
-              src="./img/jumping_job_man.webp"
+              src="./img/about_girl.webp"
               alt=""
-              class="w-[796px] h-[920px] absolute right-[160px] top-[-90px]"
+              class="w-[50%] md:w-[30%]"
             />
           </div>
         </div>
 
         <!-- OUR SERVICES -->
         <div class="flex flex-col items-center">
-          <h2 class="text-[#8860D0] text-[40px] font-[500]">Our clients</h2>
-          <div class="w-[1440px] mx-auto p-5">
-            <img src="./img/clients.webp" alt="" class="w-screen h-[200px]" />
+          <h2 class="text-[#8860D0] text-[30px] md:text-[40px] font-[500]">
+            Our services
+          </h2>
+          <div
+            class="w-screen h-[550px] sm:h-[650px] p-8 bg-[#8860D0] mt-[15px] relative mb-3"
+          >
+            <div class="max-w-[1440px] mx-auto">
+              <div class="flex flex-col gap-6">
+                <div class="flex flex-col">
+                  <p class="font-[700] text-[18px] md:text-[20px]">
+                    End-to-end virtual campus hiring
+                  </p>
+                  <p class="text-white text-[15px] w-[84vw] md:w-[425px] mt-2">
+                    Complete automation, right from - outreach to 24,000
+                    campuses, engagement, assessments, virtual interviews to
+                    industry benchmarking and analytics.
+                  </p>
+                  <div
+                    class="hidden sm:flex items-center gap-2 p-[0.35rem] px-[1.2rem] rounded-full text-[15px] text-black font-[500] bg-[#FBBC05] w-[90px] mt-5"
+                  >
+                    Explore
+                  </div>
+                </div>
+                <span
+                  class="border border-white w-[46.5vw] md:w-[200px]"
+                ></span>
+                <div class="flex flex-col">
+                  <p class="font-[700] text-[18px] md:text-[20px]">
+                    End-to-end virtual campus hiring
+                  </p>
+                  <p class="text-white text-[15px] w-[84vw] md:w-[425px] mt-2">
+                    Complete automation, right from - outreach to 24,000
+                    campuses, engagement, assessments, virtual interviews to
+                    industry benchmarking and analytics.
+                  </p>
+                  <div
+                    class="hidden sm:flex items-center gap-2 p-[0.35rem] px-[1.2rem] rounded-full text-[15px] text-black font-[500] bg-[#FBBC05] w-[90px] mt-5"
+                  >
+                    Explore
+                  </div>
+                </div>
+                <span
+                  class="border border-white w-[46.5vw] md:w-[200px]"
+                ></span>
+
+                <div class="flex flex-col">
+                  <p class="font-[700] text-[18px] md:text-[20px]">
+                    End-to-end virtual campus hiring
+                  </p>
+                  <p class="text-white text-[15px] w-[84vw] md:w-[425px] mt-2">
+                    Complete automation, right from - outreach to 24,000
+                    campuses, engagement, assessments, virtual interviews to
+                    industry benchmarking and analytics.
+                  </p>
+                  <div
+                    class="hidden sm:flex items-center gap-2 p-[0.35rem] px-[1.2rem] rounded-full text-[15px] text-black font-[500] bg-[#FBBC05] w-[90px] mt-5"
+                  >
+                    Explore
+                  </div>
+                </div>
+              </div>
+              <img
+                src="./img/jumping_job_man.webp"
+                alt=""
+                class="w-[56vw] lg:w-[44vw] h-[63vw] lg:h-[50vw] absolute right-[50px] top-[-55px] lg:top-[-81px] hidden md:block"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- OUR CLIENTS -->
+        <div class="flex flex-col items-center w-full">
+          <h2 class="text-[#8860D0] text-[30px] md:text-[40px] font-[500]">
+            Our clients
+          </h2>
+          <div
+            class="swiper client_list w-[90%] lg1:w-[85%] my-[20px] md:my-[45px]"
+          >
+            <div class="swiper-wrapper">
+              <div class="swiper-slide flex justify-center">
+                <div class="flex items-center justify-center">
+                  <img
+                    src="./img/c1.webp"
+                    alt=""
+                    class="w-[435px] h-[290px] object-contain"
+                  />
+                </div>
+              </div>
+              <div class="swiper-slide flex justify-center">
+                <div class="flex items-center justify-center">
+                  <img
+                    src="./img/c2.webp"
+                    alt=""
+                    class="w-[435px] h-[290px] object-contain"
+                  />
+                </div>
+              </div>
+              <div class="swiper-slide flex justify-center">
+                <div class="flex items-center justify-center">
+                  <img
+                    src="./img/c3.webp"
+                    alt=""
+                    class="w-[435px] h-[290px] object-contain"
+                  />
+                </div>
+              </div>
+              <div class="swiper-slide flex justify-center">
+                <div class="flex items-center justify-center">
+                  <img
+                    src="./img/c4.webp"
+                    alt=""
+                    class="w-[435px] h-[290px] object-contain"
+                  />
+                </div>
+              </div>
+              <div class="swiper-slide flex justify-center">
+                <div class="flex items-center justify-center">
+                  <img
+                    src="./img/c5.webp"
+                    alt=""
+                    class="w-[435px] h-[290px] object-contain"
+                  />
+                </div>
+              </div>
+              <div class="swiper-slide flex justify-center">
+                <div class="flex items-center justify-center">
+                  <img
+                    src="./img/c6.webp"
+                    alt=""
+                    class="w-[435px] h-[290px] object-contain"
+                  />
+                </div>
+              </div>
+              <div class="swiper-slide flex justify-center">
+                <div class="flex items-center justify-center">
+                  <img
+                    src="./img/c1.webp"
+                    alt=""
+                    class="w-[435px] h-[290px] object-contain"
+                  />
+                </div>
+              </div>
+              <div class="swiper-slide flex justify-center">
+                <div class="flex items-center justify-center">
+                  <img
+                    src="./img/c2.webp"
+                    alt=""
+                    class="w-[435px] h-[290px] object-contain"
+                  />
+                </div>
+              </div>
+              <div class="swiper-slide flex justify-center">
+                <div class="flex items-center justify-center">
+                  <img
+                    src="./img/c3.webp"
+                    alt=""
+                    class="w-[435px] h-[290px] object-contain"
+                  />
+                </div>
+              </div>
+              <div class="swiper-slide flex justify-center">
+                <div class="flex items-center justify-center">
+                  <img
+                    src="./img/c4.webp"
+                    alt=""
+                    class="w-[435px] h-[290px] object-contain"
+                  />
+                </div>
+              </div>
+              <div class="swiper-slide flex justify-center">
+                <div class="flex items-center justify-center">
+                  <img
+                    src="./img/c5.webp"
+                    alt=""
+                    class="w-[435px] h-[290px] object-contain"
+                  />
+                </div>
+              </div>
+              <div class="swiper-slide flex justify-center">
+                <div class="flex items-center justify-center">
+                  <img
+                    src="./img/c6.webp"
+                    alt=""
+                    class="w-[435px] h-[290px] object-contain"
+                  />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
         <!-- Our university partners -->
         <div class="flex flex-col items-center w-screen bg-[#E1E1E1]">
-          <h2 class="text-[#8860D0] text-[40px] font-[500] mt-[50px]">
+          <h2
+            class="text-[#8860D0] text-[30px] md:text-[40px] font-[500] mt-[25px] md:mt-[50px]"
+          >
             Our university partners
           </h2>
-          <div class="p-5">
-            <img src="./img/university.webp" alt="" class="w-full h-[500px]" />
+          <div
+            class="pt-[1.5rem] md:pt-14 pb-[3rem] md:pb-32 flex flex-col gap-[2.05rem] md:gap-[2.95rem]"
+          >
+            <div
+              class="grid grid-cols-4 gap-[2.05rem] md:gap-[2.95rem] items-center"
+            >
+              <img
+                src="./img/u1.webp"
+                alt=""
+                class="w-[5rem] md:w-[7.5rem] h-[5rem] md:h-[7.5rem]"
+              />
+              <img
+                src="./img/u2.webp"
+                alt=""
+                class="w-[5rem] md:w-[7.5rem] h-[5rem] md:h-[7.5rem]"
+              />
+              <img
+                src="./img/u3.webp"
+                alt=""
+                class="w-[5rem] md:w-[7.5rem] h-[5rem] md:h-[7.5rem]"
+              />
+              <img
+                src="./img/u4.webp"
+                alt=""
+                class="w-[5rem] md:w-[7.5rem] h-[5rem] md:h-[7.5rem]"
+              />
+            </div>
+            <div
+              class="grid grid-cols-4 gap-[2.05rem] md:gap-[2.95rem] items-center"
+            >
+              <img
+                src="./img/u1.webp"
+                alt=""
+                class="w-[5rem] md:w-[7.5rem] h-[5rem] md:h-[7.5rem]"
+              />
+              <img
+                src="./img/u2.webp"
+                alt=""
+                class="w-[5rem] md:w-[7.5rem] h-[5rem] md:h-[7.5rem]"
+              />
+              <img
+                src="./img/u3.webp"
+                alt=""
+                class="w-[5rem] md:w-[7.5rem] h-[5rem] md:h-[7.5rem]"
+              />
+              <img
+                src="./img/u4.webp"
+                alt=""
+                class="w-[5rem] md:w-[7.5rem] h-[5rem] md:h-[7.5rem]"
+              />
+            </div>
+            <div
+              class="grid grid-cols-4 gap-[2.05rem] md:gap-[2.95rem] items-center"
+            >
+              <img
+                src="./img/u1.webp"
+                alt=""
+                class="w-[5rem] md:w-[7.5rem] h-[5rem] md:h-[7.5rem]"
+              />
+              <img
+                src="./img/u2.webp"
+                alt=""
+                class="w-[5rem] md:w-[7.5rem] h-[5rem] md:h-[7.5rem]"
+              />
+              <img
+                src="./img/u3.webp"
+                alt=""
+                class="w-[5rem] md:w-[7.5rem] h-[5rem] md:h-[7.5rem]"
+              />
+              <img
+                src="./img/u4.webp"
+                alt=""
+                class="w-[5rem] md:w-[7.5rem] h-[5rem] md:h-[7.5rem]"
+              />
+            </div>
           </div>
         </div>
 
         <!-- Hear from our HRs, TPOs & Students -->
         <div class="flex flex-col items-center w-full">
-          <h2 class="text-[#8860D0] text-[40px] font-[500]">
+          <h2 class="text-[#8860D0] text-[40px] font-[500] hidden md:block">
             Hear from our HRs, TPOs & Students
           </h2>
-          <div class="swiper anime w-[80%] lg1:w-[85%] my-[30px] md:my-[65px]">
+          <h2 class="text-[#8860D0] text-[30px] font-[500] block md:hidden">
+            Hear from our clients
+          </h2>
+          <div
+            class="swiper testimone_list w-[90%] lg1:w-[85%] my-[30px] md:my-[65px]"
+          >
             <div class="swiper-wrapper">
               <div class="swiper-slide flex justify-center">
                 <div class="h-[350px]">
@@ -369,13 +536,13 @@
                     <img
                       src="./img/avatar.webp"
                       alt=""
-                      class="rounded-full w-[4.5rem] h-[4.5rem]"
+                      class="rounded-full w-[4.5rem] h-[4.5rem] border border-[#8860D0]"
                     />
                     <p class="text-[16px] font-[500] text-[#8860D0]">
                       Jack Adam
                     </p>
                     <p
-                      class="text-[#736E6E] text-[14.5px] w-[14.1vw] leading-[20px] text-center h-[90px]"
+                      class="text-[#736E6E] text-[11.5px] md:text-[14.5px] w-[240px] leading-[20px] text-center h-[90px]"
                     >
                       Corem ipsum dolor sit amet, consectetur adipiscing elit.
                       Nunc vulputate libero et velit interdum, ac aliquet odio
@@ -398,13 +565,13 @@
                     <img
                       src="./img/avatar.webp"
                       alt=""
-                      class="rounded-full w-[4.5rem] h-[4.5rem]"
+                      class="rounded-full w-[4.5rem] h-[4.5rem] border border-[#8860D0]"
                     />
                     <p class="text-[16px] font-[500] text-[#8860D0]">
                       Jack Adam
                     </p>
                     <p
-                      class="text-[#736E6E] text-[14.5px] w-[14.1vw] leading-[20px] text-center h-[90px]"
+                      class="text-[#736E6E] text-[11.5px] md:text-[14.5px] w-[240px] leading-[20px] text-center h-[90px]"
                     >
                       Corem ipsum dolor sit amet, consectetur adipiscing elit.
                       Nunc vulputate libero et velit interdum, ac aliquet odio
@@ -427,13 +594,13 @@
                     <img
                       src="./img/avatar.webp"
                       alt=""
-                      class="rounded-full w-[4.5rem] h-[4.5rem]"
+                      class="rounded-full w-[4.5rem] h-[4.5rem] border border-[#8860D0]"
                     />
                     <p class="text-[16px] font-[500] text-[#8860D0]">
                       Jack Adam
                     </p>
                     <p
-                      class="text-[#736E6E] text-[14.5px] w-[14.1vw] leading-[20px] text-center h-[90px]"
+                      class="text-[#736E6E] text-[11.5px] md:text-[14.5px] w-[240px] leading-[20px] text-center h-[90px]"
                     >
                       Corem ipsum dolor sit amet, consectetur adipiscing elit.
                       Nunc vulputate libero et velit interdum, ac aliquet odio
@@ -456,13 +623,13 @@
                     <img
                       src="./img/avatar.webp"
                       alt=""
-                      class="rounded-full w-[4.5rem] h-[4.5rem]"
+                      class="rounded-full w-[4.5rem] h-[4.5rem] border border-[#8860D0]"
                     />
                     <p class="text-[16px] font-[500] text-[#8860D0]">
                       Jack Adam
                     </p>
                     <p
-                      class="text-[#736E6E] text-[14.5px] w-[14.1vw] leading-[20px] text-center h-[90px]"
+                      class="text-[#736E6E] text-[11.5px] md:text-[14.5px] w-[240px] leading-[20px] text-center h-[90px]"
                     >
                       Corem ipsum dolor sit amet, consectetur adipiscing elit.
                       Nunc vulputate libero et velit interdum, ac aliquet odio
@@ -485,13 +652,13 @@
                     <img
                       src="./img/avatar.webp"
                       alt=""
-                      class="rounded-full w-[4.5rem] h-[4.5rem]"
+                      class="rounded-full w-[4.5rem] h-[4.5rem] border border-[#8860D0]"
                     />
                     <p class="text-[16px] font-[500] text-[#8860D0]">
                       Jack Adam
                     </p>
                     <p
-                      class="text-[#736E6E] text-[14.5px] w-[14.1vw] leading-[20px] text-center h-[90px]"
+                      class="text-[#736E6E] text-[11.5px] md:text-[14.5px] w-[240px] leading-[20px] text-center h-[90px]"
                     >
                       Corem ipsum dolor sit amet, consectetur adipiscing elit.
                       Nunc vulputate libero et velit interdum, ac aliquet odio
@@ -514,13 +681,71 @@
                     <img
                       src="./img/avatar.webp"
                       alt=""
-                      class="rounded-full w-[4.5rem] h-[4.5rem]"
+                      class="rounded-full w-[4.5rem] h-[4.5rem] border border-[#8860D0]"
                     />
                     <p class="text-[16px] font-[500] text-[#8860D0]">
                       Jack Adam
                     </p>
                     <p
-                      class="text-[#736E6E] text-[14.5px] w-[14.1vw] leading-[20px] text-center h-[90px]"
+                      class="text-[#736E6E] text-[11.5px] md:text-[14.5px] w-[240px] leading-[20px] text-center h-[90px]"
+                    >
+                      Corem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Nunc vulputate libero et velit interdum, ac aliquet odio
+                      mattis. Class aptent taciti
+                    </p>
+                    <img
+                      src="./img/x.webp"
+                      alt=""
+                      class="w-[0.75rem] h-[0.75rem]"
+                    />
+                    <p class="text-[12px]">Operation manager</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide flex justify-center">
+                <div class="h-[350px]">
+                  <div
+                    class="w-[300px] h-[300px] rounded-full bg-white cursor-grab flex flex-col items-center justify-evenly p-8"
+                  >
+                    <img
+                      src="./img/avatar.webp"
+                      alt=""
+                      class="rounded-full w-[4.5rem] h-[4.5rem] border border-[#8860D0]"
+                    />
+                    <p class="text-[16px] font-[500] text-[#8860D0]">
+                      Jack Adam
+                    </p>
+                    <p
+                      class="text-[#736E6E] text-[11.5px] md:text-[14.5px] w-[240px] leading-[20px] text-center h-[90px]"
+                    >
+                      Corem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Nunc vulputate libero et velit interdum, ac aliquet odio
+                      mattis. Class aptent taciti
+                    </p>
+                    <img
+                      src="./img/x.webp"
+                      alt=""
+                      class="w-[0.75rem] h-[0.75rem]"
+                    />
+                    <p class="text-[12px]">Operation manager</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide flex justify-center">
+                <div class="h-[350px]">
+                  <div
+                    class="w-[300px] h-[300px] rounded-full bg-white cursor-grab flex flex-col items-center justify-evenly p-8"
+                  >
+                    <img
+                      src="./img/avatar.webp"
+                      alt=""
+                      class="rounded-full w-[4.5rem] h-[4.5rem] border border-[#8860D0]"
+                    />
+                    <p class="text-[16px] font-[500] text-[#8860D0]">
+                      Jack Adam
+                    </p>
+                    <p
+                      class="text-[#736E6E] text-[11.5px] md:text-[14.5px] w-[240px] leading-[20px] text-center h-[90px]"
                     >
                       Corem ipsum dolor sit amet, consectetur adipiscing elit.
                       Nunc vulputate libero et velit interdum, ac aliquet odio
@@ -536,93 +761,168 @@
                 </div>
               </div>
             </div>
-            <div class="swiper-pagination animePagination"></div>
           </div>
         </div>
 
         <!-- FOOTER -->
-        <div class="flex flex-col w-screen bg-[#E1E1E1] py-20 px-[14.5rem]">
+        <div
+          class="flex flex-col w-screen bg-[#E1E1E1] p-[1.5rem] sm:p-[3.5rem] md:py-20 md:px-[14.5rem]"
+        >
           <div class="flex flex-col">
             <img
               src="./img/hirekarma_logo.webp"
               alt=""
-              class="w-[160px] h-[53px] cursor-pointer"
+              class="w-[125px] md:w-[160px] h-[40px] md:h-[53px] cursor-pointer"
             />
-            <p class="text-[#1C1B1F] text-[18px] w-[45vw] my-[20px]">
+            <p
+              class="text-[#1C1B1F] text-[15px] md:text-[18px] w-[85vw] md:w-[45vw] my-[12px] md:my-[20px]"
+            >
               Corem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
               vulputate libero et velit interdum, ac aliquet odio mattis. Class
               aptent taciti sociosqu ad litora torquent per conubia nostra, per
               inceptos himenaeos.
             </p>
           </div>
-          <div class="grid grid-cols-7 mt-[20px]">
-            <ul class="flex flex-col gap-4">
-              <h3 class="mt-2 text-[#8860D0] text-[20px] font-[500]">
+          <div class="grid grid-cols-3 md:grid-cols-7 mt-[20px] gap-[16px]">
+            <ul class="flex flex-col gap-[0.7rem] md:gap-4">
+              <h3
+                class="mt-2 text-[#8860D0] text-[18px] md:text-[20px] font-[500]"
+              >
                 University
               </h3>
-              <li class="text-[15px] font-[600] cursor-pointer">Sign up</li>
-              <li class="text-[15px] font-[600] cursor-pointer">Testimony</li>
-              <li class="text-[15px] font-[600] cursor-pointer">Contact</li>
+              <li class="text-[11px] md:text-[15px] font-[600] cursor-pointer">
+                Sign up
+              </li>
+              <li class="text-[11px] md:text-[15px] font-[600] cursor-pointer">
+                Testimony
+              </li>
+              <li class="text-[11px] md:text-[15px] font-[600] cursor-pointer">
+                Contact
+              </li>
             </ul>
 
-            <ul class="flex flex-col gap-4">
-              <h3 class="mt-2 text-[#8860D0] text-[20px] font-[500]">
+            <ul class="flex flex-col gap-[0.7rem] md:gap-4">
+              <h3
+                class="mt-2 text-[#8860D0] text-[18px] md:text-[20px] font-[500]"
+              >
                 Employee
               </h3>
-              <li class="text-[15px] font-[600] cursor-pointer">
+              <li class="text-[11px] md:text-[15px] font-[600] cursor-pointer">
                 Start hiring
               </li>
-              <li class="text-[15px] font-[600] cursor-pointer">Schedule</li>
-              <li class="text-[15px] font-[600] cursor-pointer">
+              <li class="text-[11px] md:text-[15px] font-[600] cursor-pointer">
+                Schedule
+              </li>
+              <li class="text-[11px] md:text-[15px] font-[600] cursor-pointer">
                 Call with sales team
               </li>
             </ul>
 
-            <ul class="flex flex-col gap-4">
-              <h3 class="mt-2 text-[#8860D0] text-[20px] font-[500]">
+            <ul class="flex flex-col gap-[0.7rem] md:gap-4">
+              <h3
+                class="mt-2 text-[#8860D0] text-[18px] md:text-[20px] font-[500]"
+              >
                 Students
               </h3>
-              <li class="text-[15px] font-[600] cursor-pointer">Support</li>
-              <li class="text-[15px] font-[600] cursor-pointer">Login</li>
-              <li class="text-[15px] font-[600] cursor-pointer">Sign up</li>
+              <li class="text-[11px] md:text-[15px] font-[600] cursor-pointer">
+                Support
+              </li>
+              <li class="text-[11px] md:text-[15px] font-[600] cursor-pointer">
+                Login
+              </li>
+              <li class="text-[11px] md:text-[15px] font-[600] cursor-pointer">
+                Sign up
+              </li>
+            </ul>
+
+            <ul class="flex flex-col gap-[0.7rem] md:gap-4 col-span-2">
+              <li
+                class="text-[11px] md:text-[15px] font-[600] cursor-pointer mt-5 md:mt-[54px]"
+              >
+                91+ 7777777777
+              </li>
+              <li class="text-[11px] md:text-[15px] font-[600] cursor-pointer">
+                25, Random address, bhubaneswar odisha pin-777777
+              </li>
+              <li class="text-[11px] md:text-[15px] font-[600] cursor-pointer">
+                Sign up
+              </li>
             </ul>
           </div>
-          <div class="flex justify-end gap-6 mt-[50px]">
+          <div class="flex justify-end gap-6 mt-[40px] md:mt-[50px]">
             <a href="" class="cursor-pointer">
-              <img src="./img/insta.png" alt="" class="w-8 h-8" />
+              <img
+                src="./img/insta.png"
+                alt=""
+                class="w-[1.6rem] md:w-8 h-[1.6rem] md:h-8"
+              />
             </a>
             <a href="" class="cursor-pointer">
-              <img src="./img/linkedin.png" alt="" class="w-8 h-8" />
+              <img
+                src="./img/linkedin.png"
+                alt=""
+                class="w-[1.6rem] md:w-8 h-[1.6rem] md:h-8"
+              />
             </a>
             <a href="" class="cursor-pointer">
-              <img src="./img/fb.png" alt="" class="w-8 h-8" />
+              <img
+                src="./img/fb.png"
+                alt=""
+                class="w-[1.6rem] md:w-8 h-[1.6rem] md:h-8"
+              />
             </a>
           </div>
         </div>
       </main>
     </div>
   </body>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
   <script>
-    var swiper = new Swiper(".anime", {
+    let swiperTestimone = new Swiper(".testimone_list", {
       slidesPerView: 1,
       spaceBetween: 10,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-        renderBullet: function (index, className) {
-          return '<span class="' + className + '">' + "</span>";
-        },
+      loop: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
       },
       breakpoints: {
         768: {
           slidesPerView: 2,
+          slidesPerGroup: 2,
         },
-        870: {
+        1168: {
           slidesPerView: 3,
+          slidesPerGroup: 3,
         },
-        1040: {
+        1536: {
           slidesPerView: 4,
+          slidesPerGroup: 4,
+        },
+      },
+    });
+    let swiperClient = new Swiper(".client_list", {
+      slidesPerView: 2,
+      spaceBetween: 10,
+      loop: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      breakpoints: {
+        768: {
+          slidesPerView: 2,
+          slidesPerGroup: 2,
+        },
+        1168: {
+          slidesPerView: 4,
+          slidesPerGroup: 4,
+        },
+        1536: {
+          slidesPerView: 6,
+          slidesPerGroup: 6,
         },
       },
     });
