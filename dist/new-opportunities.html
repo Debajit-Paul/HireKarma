@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hire</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="w-fill bg-white">
+    <div class="flex flex-col justify-center items-center overflow-hidden">
+      <header class="fixed top-0 z-40 w-screen drop-shadow-md">
+        <nav
+          class="w-full h-[60px] md:h-[69px] flex items-center justify-between md:justify-around px-[30px] md:pl-[60px] lg1:pl-[100px] md:pr-[60px] lg1:pr-[100px] absolute z-30 bg-white"
+        >
+          <img
+            src="./img/home/hirekarma_logo.webp"
+            alt=""
+            class="w-[160px] h-[53px]"
+          />
+
+          <!-- Desktop menu -->
+          <ul
+            class="list-none hidden md:grid grid-cols-6 justify-items-center justify-between items-center h-[41px] gap-[12px]"
+          >
+            <li class="text-[14px] font-[400] cursor-pointer">Home</li>
+            <li
+              class="flex items-center text-[14px] font-[400] cursor-pointer gap-[6px]"
+            >
+              Category
+            </li>
+            <li class="text-[14px] font-[400] cursor-pointer">University</li>
+            <li class="text-[14px] font-[400] cursor-pointer">Students</li>
+            <li class="text-[14px] font-[400] cursor-pointer">Employees</li>
+            <li class="text-[14px] font-[400] cursor-pointer">Contacts us</li>
+          </ul>
+
+          <div class="hidden md:flex items-center gap-[12px]">
+            <button
+              class="w-[80px] lg1:w-[104px] h-[33px] bg-[#f0e600] rounded-[16.5px] text-black text-[12px] lg1:text-[14px]"
+              onclick="signIn(true)"
+            >
+              Login
+            </button>
+            <button
+              class="w-[80px] lg1:w-[104px] h-[33px] bg-white rounded-[16.5px] text-black text-[12px] lg1:text-[14px] border-[#f0e600] border-2"
+            >
+              Register
+            </button>
+          </div>
+
+          <div
+            class="w-8 md:w-12 h-8 md:h-12 rounded-full flex md:hidden justify-center items-center cursor-pointer relative -mr-2"
+          >
+            <img
+              id="hammenu-btn"
+              src="./img/hamburger.png"
+              alt="hamMenu"
+              class="text-[20px] transition-all duration-500 ease-in-out rotate-0"
+            />
+          </div>
+        </nav>
+      </header>
+
+      <main
+        class="mt-[70px] w-screen flex flex-col gap-[80px] items-center px-[12px] md:px-[25px]"
+      >
+        <!-- HERO -->
+        <div
+          class="max-w-[1440px] mx-auto p-5 pt-[4rem] grid grid-cols-2 items-center justify-items-center"
+        >
+          <div class="flex flex-col gap-6">
+            <h2 class="text-[#002243] text-[3rem] font-[500]">
+              Unlock new opportunities
+            </h2>
+            <p class="text-[#736E6E] text-[1.2rem]">
+              Corem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+              vulputate libero et velit interdum, ac aliquet odio mattis.
+            </p>
+            <button
+              class="p-3 px-8 rounded-[3rem] border border-[#F0E600] font-[600] mt-4 w-[180px]"
+            >
+              Join now
+            </button>
+          </div>
+          <img src="./img/new-opp/hero-img.png" alt="" class="w-[30vw]" />
+        </div>
+
+        <!-- Purple section -->
+        <div class="w-screen p-5 py-[4vw] bg-[#8860D0] mb-[50px]">
+          <div class="max-w-[75%] mx-auto grid grid-cols-4 gap-[5vw]">
+            <div class="flex justify-between w-full">
+              <div class="flex flex-col gap-[0.8vw]">
+                <img
+                  src="./img/new-opp/icon1.png"
+                  alt=""
+                  class="w-[6vw] h-[6vw]"
+                />
+                <p class="text-white font-[500] text-[1.2vw] w-[10.6vw]">
+                  Corem ipsum dolor sit amet,
+                </p>
+                <p class="text-white text-[0.8vw] w-[11vw]">
+                  Corem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+              </div>
+              <img src="./img/new-opp/line.png" alt="" class="h-[15vw]" />
+            </div>
+            <div class="flex justify-between w-full">
+              <div class="flex flex-col gap-[0.8vw]">
+                <img
+                  src="./img/new-opp/icon1.png"
+                  alt=""
+                  class="w-[6vw] h-[6vw]"
+                />
+                <p class="text-white font-[500] text-[1.2vw] w-[10.6vw]">
+                  Corem ipsum dolor sit amet,
+                </p>
+                <p class="text-white text-[0.8vw] w-[11vw]">
+                  Corem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+              </div>
+              <img src="./img/new-opp/line.png" alt="" class="h-[15vw]" />
+            </div>
+            <div class="flex justify-between w-full">
+              <div class="flex flex-col gap-[0.8vw]">
+                <img
+                  src="./img/new-opp/icon1.png"
+                  alt=""
+                  class="w-[6vw] h-[6vw]"
+                />
+                <p class="text-white font-[500] text-[1.2vw] w-[10.6vw]">
+                  Corem ipsum dolor sit amet,
+                </p>
+                <p class="text-white text-[0.8vw] w-[11vw]">
+                  Corem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+              </div>
+              <img src="./img/new-opp/line.png" alt="" class="h-[15vw]" />
+            </div>
+            <div class="flex flex-col gap-[0.8vw] w-full">
+              <img
+                src="./img/new-opp/icon1.png"
+                alt=""
+                class="w-[6vw] h-[6vw]"
+              />
+              <p class="text-white font-[500] text-[1.2vw] w-[10.6vw]">
+                Corem ipsum dolor sit amet,
+              </p>
+              <p class="text-white text-[0.8vw] w-[11vw]">
+                Corem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Match your skills -->
+        <div class="w-screen p-5 pt-[4rem] bg-[#F8F8F8]">
+          <div
+            class="max-w-[1440px] mx-auto grid grid-cols-2 items-center justify-items-center"
+          >
+            <div class="flex flex-col justify-between h-[85%]">
+              <div class="flex flex-col gap-6">
+                <h2 class="text-[#05305C] text-[3rem] font-[500]">
+                  Match your skills to get job you’re made for!
+                </h2>
+                <p class="text-[#736E6E] text-[1.2rem]">
+                  Corem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+                  vulputate libero et velit interdum, ac aliquet odio mattis.
+                </p>
+                <p class="text-[#736E6E] text-[1.2rem]">
+                  Corem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+                  vulputate libero et velit interdum, ac aliquet odio mattis.
+                </p>
+              </div>
+              <button
+                class="p-3 px-8 rounded-[3rem] border border-[#F0E600] font-[600] mt-4 w-[180px]"
+              >
+                Get started
+              </button>
+            </div>
+            <img
+              src="./img/new-opp/match-skills-logo.png"
+              alt=""
+              class="w-[30vw]"
+            />
+          </div>
+        </div>
+
+        <!-- Stress free -->
+        <div
+          class="max-w-[1440px] mx-auto p-5 pt-[4rem] grid grid-cols-2 items-center justify-items-center"
+        >
+          <div class="flex flex-col justify-between h-[85%]">
+            <div class="flex flex-col gap-6">
+              <h2 class="text-[#05305C] text-[3rem] font-[500]">
+                Match your skills to get job you’re made for!
+              </h2>
+              <p class="text-[#736E6E] text-[1.5rem] font-[600] w-[20vw]">
+                Search & apply to companies like you’re shopping for your
+                favourite dress!
+              </p>
+            </div>
+            <button
+              class="p-3 px-8 rounded-[3rem] border border-[#F0E600] font-[600] mt-4 w-[180px]"
+            >
+              Get started
+            </button>
+          </div>
+          <img
+            src="./img/new-opp/stress-free-logo.png"
+            alt=""
+            class="w-[20vw]"
+          />
+        </div>
+
+        <!-- video tour -->
+        <div
+          class="w-screen p-5 py-[3rem] bg-[#F8F8F8] flex items-center justify-center"
+        >
+          <div class="flex flex-col items-center">
+            <div class="flex flex-col items-center">
+              <h2 class="text-[3rem] font-[500]">Take a free video tour</h2>
+              <p class="font-[500] text-center text-[#736E6E]">
+                Search & apply to companies like you’re shopping for your
+                favourite dress!
+              </p>
+            </div>
+            <button
+              class="mt-[80px] p-3 px-8 rounded-[3rem] border border-[#F0E600] font-[600] w-[180px]"
+            >
+              Join now
+            </button>
+          </div>
+        </div>
+
+        <!-- trust us -->
+        <div
+          class="max-w-[1440px] w-full mx-auto p-5 pt-[4rem] grid grid-cols-2 items-center"
+        >
+          <div class="flex flex-col justify-between h-[120%]">
+            <div class="flex flex-col gap-[0.8rem]">
+              <h2 class="text-[#05305C] text-[3rem] font-[500]">
+                Why should you trust us?
+              </h2>
+              <p
+                class="text-[#1c1b1f] text-[1.5rem] font-[600] w-[30vw] leading-[30px]"
+              >
+                We’ve placed over 100 students, we’ve partnered with more than
+                50+ companies
+              </p>
+              <p class="text-[#736E6E] text-[0.8rem] w-[13vw]">
+                Corem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+                vulputate libero et velit interdum, ac aliquet odio mattis.
+              </p>
+            </div>
+            <button
+              class="p-3 px-8 rounded-[3rem] border border-[#F0E600] font-[600] mt-4 w-[180px]"
+            >
+              Get started
+            </button>
+          </div>
+          <img src="./img/new-opp/trust-us-logo.png" alt="" class="w-[30vw]" />
+        </div>
+
+        <!-- CPC -->
+        <div
+          class="w-screen p-5 py-[3rem] flex flex-col items-center justify-center gap-5"
+        >
+          <h2 class="text-[#05305C] text-[3rem] font-[500]">Why CPC</h2>
+          <p class="text-center text-[#736E6E] text-[1.2rem] w-[45vw]">
+            Corem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+            vulputate libero et velit interdum, ac aliquet odio mattis. Class
+            aptent taciti sociosqu ad litora torquent per conubia nostra, per
+            inceptos himenaeos.
+          </p>
+          <p class="text-center text-[#736E6E] text-[1.2rem] w-[45vw]">
+            Corem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+            vulputate libero et velit interdum, ac aliquet odio mattis. Class
+            aptent taciti sociosqu ad litora torquent per conubia nostra, per
+            inceptos himenaeos.
+          </p>
+        </div>
+
+        <!-- FOOTER -->
+        <div
+          class="flex flex-col w-screen bg-[#E1E1E1] p-[1.5rem] sm:p-[3.5rem] md:py-20 md:px-[14.5rem]"
+        >
+          <div class="flex flex-col">
+            <img
+              src="./img/home/hirekarma_logo.webp"
+              alt=""
+              class="w-[125px] md:w-[160px] h-[40px] md:h-[53px] cursor-pointer"
+            />
+            <p
+              class="text-[#1C1B1F] text-[15px] md:text-[18px] w-[85vw] md:w-[45vw] my-[12px] md:my-[20px]"
+            >
+              Corem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+              vulputate libero et velit interdum, ac aliquet odio mattis. Class
+              aptent taciti sociosqu ad litora torquent per conubia nostra, per
+              inceptos himenaeos.
+            </p>
+          </div>
+          <div class="grid grid-cols-3 md:grid-cols-7 mt-[20px] gap-[16px]">
+            <ul class="flex flex-col gap-[0.7rem] md:gap-4">
+              <h3
+                class="mt-2 text-[#8860D0] text-[18px] md:text-[20px] font-[500]"
+              >
+                University
+              </h3>
+              <li class="text-[11px] md:text-[15px] font-[600] cursor-pointer">
+                Sign up
+              </li>
+              <li class="text-[11px] md:text-[15px] font-[600] cursor-pointer">
+                Testimony
+              </li>
+              <li class="text-[11px] md:text-[15px] font-[600] cursor-pointer">
+                Contact
+              </li>
+            </ul>
+
+            <ul class="flex flex-col gap-[0.7rem] md:gap-4">
+              <h3
+                class="mt-2 text-[#8860D0] text-[18px] md:text-[20px] font-[500]"
+              >
+                Employee
+              </h3>
+              <li class="text-[11px] md:text-[15px] font-[600] cursor-pointer">
+                Start hiring
+              </li>
+              <li class="text-[11px] md:text-[15px] font-[600] cursor-pointer">
+                Schedule
+              </li>
+              <li class="text-[11px] md:text-[15px] font-[600] cursor-pointer">
+                Call with sales team
+              </li>
+            </ul>
+
+            <ul class="flex flex-col gap-[0.7rem] md:gap-4">
+              <h3
+                class="mt-2 text-[#8860D0] text-[18px] md:text-[20px] font-[500]"
+              >
+                Students
+              </h3>
+              <li class="text-[11px] md:text-[15px] font-[600] cursor-pointer">
+                Support
+              </li>
+              <li class="text-[11px] md:text-[15px] font-[600] cursor-pointer">
+                Login
+              </li>
+              <li class="text-[11px] md:text-[15px] font-[600] cursor-pointer">
+                Sign up
+              </li>
+            </ul>
+
+            <ul class="flex flex-col gap-[0.7rem] md:gap-4 col-span-2">
+              <li
+                class="text-[11px] md:text-[15px] font-[600] cursor-pointer mt-5 md:mt-[54px]"
+              >
+                91+ 7777777777
+              </li>
+              <li class="text-[11px] md:text-[15px] font-[600] cursor-pointer">
+                25, Random address, bhubaneswar odisha pin-777777
+              </li>
+              <li class="text-[11px] md:text-[15px] font-[600] cursor-pointer">
+                Sign up
+              </li>
+            </ul>
+          </div>
+          <div class="flex justify-end gap-6 mt-[40px] md:mt-[50px]">
+            <a href="" class="cursor-pointer">
+              <img
+                src="./img/home/insta.png"
+                alt=""
+                class="w-[1.6rem] md:w-8 h-[1.6rem] md:h-8"
+              />
+            </a>
+            <a href="" class="cursor-pointer">
+              <img
+                src="./img/home/linkedin.png"
+                alt=""
+                class="w-[1.6rem] md:w-8 h-[1.6rem] md:h-8"
+              />
+            </a>
+            <a href="" class="cursor-pointer">
+              <img
+                src="./img/home/fb.png"
+                alt=""
+                class="w-[1.6rem] md:w-8 h-[1.6rem] md:h-8"
+              />
+            </a>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
