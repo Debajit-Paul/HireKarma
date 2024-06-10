@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hire</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="w-fill bg-[#F3F3F3]">
+    <div class="flex flex-col justify-center items-center overflow-hidden">
+      <header class="fixed top-0 z-40 w-screen drop-shadow-md">
+        <nav
+          class="w-full h-[60px] md:h-[69px] flex items-center justify-between md:justify-around px-[30px] md:pl-[60px] lg1:pl-[100px] md:pr-[60px] lg1:pr-[100px] absolute z-30 bg-white"
+        >
+          <img
+            src="./img/home/hirekarma_logo.webp"
+            alt=""
+            class="w-[130px] md:w-[160px] h-[45px] md:h-[53px]"
+          />
+
+          <!-- Desktop menu -->
+          <ul
+            class="list-none hidden md:grid grid-cols-6 justify-items-center justify-between items-center h-[41px] gap-[12px]"
+          >
+            <li class="text-[14px] font-[400] cursor-pointer">Home</li>
+            <li class="text-[#00BBE8] font-bold text-[16px] cursor-pointer">
+              University
+            </li>
+            <li class="text-[14px] font-[400] cursor-pointer">Students</li>
+            <li class="text-[14px] font-[400] cursor-pointer">Corpotate</li>
+            <li class="text-[14px] font-[400] cursor-pointer">CPC</li>
+          </ul>
+
+          <div class="hidden md:flex items-center gap-[12px]">
+            <button
+              class="w-[80px] lg1:w-[104px] h-[33px] bg-[#f0e600] rounded-[16.5px] text-black text-[12px] lg1:text-[14px]"
+              onclick="signIn(true)"
+            >
+              Login
+            </button>
+            <button
+              class="w-[80px] lg1:w-[104px] h-[33px] bg-white rounded-[16.5px] text-black text-[12px] lg1:text-[14px] border-[#f0e600] border-2"
+            >
+              Register
+            </button>
+          </div>
+
+          <div
+            class="w-8 md:w-12 h-8 md:h-12 rounded-full flex md:hidden justify-center items-center cursor-pointer relative -mr-2"
+          >
+            <img
+              id="hammenu-btn"
+              src="./img/home/hamburger.png"
+              alt="hamMenu"
+              class="text-[20px] transition-all duration-500 ease-in-out rotate-0"
+            />
+          </div>
+        </nav>
+      </header>
+
+      <main
+        class="mt-[70px] w-screen flex flex-col gap-[80px] items-center px-[12px] md:px-[25px]"
+      >
+        <!-- HERO -->
+        <div
+          class="bg-[url('./img/university/hirekarma_hero.png')] bg-no-repeat bg-contain mx-auto max-w-[94.5vw] md:max-w-[1440px] w-full h-[54.7vw] lg1:h-[860px] my-[20px] flex flex-col pl-[5rem]"
+        >
+          <div
+            class="flex flex-col gap-[8px] sm:gap-[20px] mt-[1.5rem] sm:mt-[5.5rem] md:mt-[12rem]"
+          >
+            <h2
+              class="text-white text-[14px] sm:text-[22px] md:text-[40px] font-[500]"
+            >
+              Take your placement cell to a new level
+            </h2>
+            <p
+              class="text-white text-[11px] sm:text-[17px] md:text-[16px] font-[300] w-[71.9vw] md:w-[32vw]"
+            >
+              Ready to elevate your Graduate Placement Rate to new heights? Join
+              us on a journey where excellence meets opportunity and become
+              renowned for providing quality placements that set your students
+              on the path to success.
+            </p>
+
+            <button
+              class="bg-[#F0E600] w-[87px] sm:w-[122px] md:w-[175px] h-[25px] sm:h-[39px] md:h-[53px] text-[10.5px] sm:text-[15.5px] md:text-[18px] font-[600] rounded-full"
+            >
+              Sign up
+            </button>
+          </div>
+        </div>
+
+        <!-- Universities -->
+        <div class="flex flex-col items-center max-w-[1440px] gap-[5rem]">
+          <h2
+            class="text-[#45376A] text-center md:text-left text-[1.2rem] sm:text-[2rem] md:text-[3rem] font-[500] leading-[35px] sm:leading-[50px]"
+          >
+            Universities associated with us
+          </h2>
+          <div
+            class="flex flex-col-reverse md:grid md:grid-cols-2 gap-4 md:gap-[10rem]"
+          >
+            <div class="flex flex-col gap-[3rem]">
+              <p class="text-[#736E6E]">
+                More than 70 universities have partnered with us and witnessed a
+                rise in their graduate placement rates. Our innovative platform
+                connects talented students with a vast network of reputed
+                companies and ensures a win-win situation for all. By
+                collaborating with Hirekarma, universities gain a competitive
+                edge by increasing their entry level requirements and achieving
+                remarkable placement success. 
+              </p>
+              <button
+                class="border border-[#8860D0] text-[#8860D0] w-[87px] sm:w-[122px] md:w-[175px] h-[25px] sm:h-[39px] md:h-[53px] text-[10.5px] sm:text-[15.5px] md:text-[23px] font-[600] rounded-md"
+              >
+                Know more
+              </button>
+            </div>
+            <div class="flex flex-col gap-[3rem]">
+              <div
+                class="grid grid-cols-4 gap-[2vw] items-center justify-items-center"
+              >
+                <img
+                  src="./img/home/u1.webp"
+                  alt=""
+                  class="w-[10vw] md:w-[5vw] h-[10vw] md:h-[5vw]"
+                />
+                <img
+                  src="./img/home/u2.webp"
+                  alt=""
+                  class="w-[10vw] md:w-[5vw] h-[10vw] md:h-[5vw]"
+                />
+                <img
+                  src="./img/home/u3.webp"
+                  alt=""
+                  class="w-[10vw] md:w-[5vw] h-[10vw] md:h-[5vw]"
+                />
+                <img
+                  src="./img/home/u4.webp"
+                  alt=""
+                  class="w-[10vw] md:w-[5vw] h-[10vw] md:h-[5vw]"
+                />
+              </div>
+              <div
+                class="grid grid-cols-4 gap-[2vw] items-center justify-items-center"
+              >
+                <img
+                  src="./img/home/u5.webp"
+                  alt=""
+                  class="w-[10vw] md:w-[5vw] h-[10vw] md:h-[5vw]"
+                />
+                <img
+                  src="./img/home/u6.webp"
+                  alt=""
+                  class="w-[10vw] md:w-[5vw] h-[10vw] md:h-[5vw]"
+                />
+                <img
+                  src="./img/home/u7.webp"
+                  alt=""
+                  class="w-[10vw] md:w-[5vw] h-[10vw] md:h-[5vw]"
+                />
+
+                <p class="text-[#333333] font-bold">+30 more</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- TPO -->
+        <div class="flex flex-col items-center w-screen">
+          <h2
+            class="text-[#45376A] text-center md:text-left text-[1.2rem] sm:text-[2rem] md:text-[3rem] font-[500] leading-[35px] sm:leading-[50px]"
+          >
+            Why TPOs love us
+          </h2>
+
+          <div
+            class="swiper tpo_list w-[90%] lg1:w-[85%] my-[20px] md:my-[45px]"
+          >
+            <div class="swiper-wrapper">
+              <div class="swiper-slide flex justify-center">
+                <div class="flex flex-col items-center gap-3">
+                  <img
+                    src="./img/university/avater.png"
+                    alt=""
+                    class="rounded-full drop-shadow-md w-[12rem] h-[12rem]"
+                  />
+                  <p class="text-[#9747FF] font-medium bg-[#F3F3F3]">
+                    Juliana Rodrigues
+                  </p>
+                  <p class="font-semibold text-[#736E6E] bg-[#F3F3F3]">
+                    Prof. IIM Ahmedabad, Economics
+                  </p>
+                  <p
+                    class="text-[#736E6E] text-sm w-[35vw] text-center bg-[#F3F3F3]"
+                  >
+                    Corem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Nunc vulputate libero et velit interdum, ac aliquet odio
+                    mattis. Class aptent taciti sociosqu ad litora torquent per
+                    conubia nostra, per inceptos himenaeos.
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide flex justify-center">
+                <div class="flex flex-col items-center gap-3">
+                  <img
+                    src="./img/university/avater.png"
+                    alt=""
+                    class="rounded-full drop-shadow-md w-[12rem] h-[12rem]"
+                  />
+                  <p class="text-[#9747FF] font-medium bg-[#F3F3F3]">
+                    James Bond
+                  </p>
+                  <p class="font-semibold text-[#736E6E] bg-[#F3F3F3]">
+                    Prof. IIM Ahmedabad, Economics
+                  </p>
+                  <p
+                    class="text-[#736E6E] text-sm w-[35vw] text-center bg-[#F3F3F3]"
+                  >
+                    Corem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Nunc vulputate ad litora torquent per conubia nostra, per
+                    inceptos himenaeos.
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide flex justify-center">
+                <div class="flex flex-col items-center gap-3">
+                  <img
+                    src="./img/university/avater.png"
+                    alt=""
+                    class="rounded-full drop-shadow-md w-[12rem] h-[12rem]"
+                  />
+                  <p class="text-[#9747FF] font-medium bg-[#F3F3F3]">
+                    Andrew Huberman
+                  </p>
+                  <p class="font-semibold text-[#736E6E] bg-[#F3F3F3]">
+                    Prof. IIM Ahmedabad, Economics
+                  </p>
+                  <p
+                    class="text-[#736E6E] text-sm w-[35vw] text-center bg-[#F3F3F3]"
+                  >
+                    Corem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Nunc vulputate libero et velit interdum, ac aliquet odio
+                    mattis. Class aptent taciti sociosqu ad litora torquent per
+                    conubia nostra, per inceptos himenaeos.Corem ipsum dolor sit
+                    amet, consectetur adipiscing elit. Nunc vulputate libero et
+                    velit interdum, ac aliquet odio mattis. Class aptent taciti
+                    sociosqu ad litora torquent per conubia nostra, per inceptos
+                    himenaeos.
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide flex justify-center">
+                <div class="flex flex-col items-center gap-3">
+                  <img
+                    src="./img/university/avater.png"
+                    alt=""
+                    class="rounded-full drop-shadow-md w-[12rem] h-[12rem]"
+                  />
+                  <p class="text-[#9747FF] font-medium bg-[#F3F3F3]">
+                    Jeff Bezos
+                  </p>
+                  <p class="font-semibold text-[#736E6E] bg-[#F3F3F3]">
+                    Prof. IIM Ahmedabad, Economics
+                  </p>
+                  <p
+                    class="text-[#736E6E] text-sm w-[35vw] text-center bg-[#F3F3F3]"
+                  >
+                    Corem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Nunc vulputate libero et velit interdum, ac aliquet odio
+                    mattis. Class aptent taciti sociosqu ad litora torquent per
+                    conubia nostra, per inceptos himenaeos.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Effortless -->
+        <div class="w-screen flex flex-col items-center">
+          <h2
+            class="text-[#45376A] text-center md:text-left text-[1.2rem] sm:text-[2rem] md:text-[3rem] font-[500] leading-[35px] sm:leading-[50px]"
+          >
+            Effortless from start to end
+          </h2>
+          <div
+            class="flex flex-col md:grid md:grid-cols-2 items-center justify-items-start w-screen"
+          >
+            <img
+              src="./img/university/effortless.png"
+              alt=""
+              class="w-[55vw] md:w-[40vw]"
+            />
+
+            <div
+              class="flex flex-col items-center md:items-start justify-evenly h-[85%] mt-[20px] md:mt-0"
+            >
+              <div
+                class="flex flex-col items-center md:items-start gap-[0.5rem] sm:gap-6"
+              >
+                <div class="flex flex-col gap-[1.5rem]">
+                  <div class="flex items-center gap-4">
+                    <img
+                      src="./img/future-workforce/lp1.png"
+                      alt=""
+                      class="w-9 h-9"
+                    />
+                    <p
+                      class="text-[#736E6E] w-[90%] sm:w-[75%] text-[0.8rem] md:text-[1rem]"
+                    >
+                      Zero - Hassle placements Streamlined solutions ensure 22%
+                      improvement in placement conversion
+                    </p>
+                  </div>
+                  <div class="flex items-center gap-4">
+                    <img
+                      src="./img/future-workforce/lp2.png"
+                      alt=""
+                      class="w-9 h-9"
+                    />
+                    <p
+                      class="text-[#736E6E] w-[90%] sm:w-[75%] text-[0.8rem] md:text-[1rem]"
+                    >
+                      Seamless student data management Save 80% more time, and
+                      track every student’s placement cycle in one giance
+                    </p>
+                  </div>
+                  <div class="flex items-center gap-4">
+                    <img
+                      src="./img/future-workforce/lp3.png"
+                      alt=""
+                      class="w-9 h-9"
+                    />
+                    <p
+                      class="text-[#736E6E] w-[90%] sm:w-[75%] text-[0.8rem] md:text-[1rem]"
+                    >
+                      All the data you need, in one giance. (Gold mine of
+                      insights)
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <button
+                class="p-3 px-8 rounded-[3rem] bg-[#F0E600] font-[600] mt-4 w-[150px] sm:w-[180px]"
+              >
+                Explore
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- One Glance -->
+        <div class="flex flex-col items-center bg-white w-screen py-[5rem]">
+          <h2
+            class="text-[#45376A] text-center md:text-left text-[1.2rem] sm:text-[2rem] md:text-[3rem] font-[500] leading-[35px] sm:leading-[50px]"
+          >
+            All the data you need, in one glance
+          </h2>
+
+          <img src="./img/university/glance.png" alt="" />
+
+          <p class="text-[#736E6E] text-sm w-[40vw] text-center">
+            Navigating the path from education to employment can be challenging.
+            The Resource Hub is here to bridge that gap by providing you with a
+            comprehensive suite of resources that cater to every aspect of your
+            career development.
+          </p>
+        </div>
+
+        <!-- Perfect Relationship -->
+        <div class="flex flex-col items-center w-screen py-[5rem] gap-[2rem]">
+          <h2
+            class="text-[#45376A] text-center text-[1.2rem] sm:text-[2rem] md:text-[3rem] font-[500] leading-[35px] sm:leading-[50px] w-[40vw]"
+          >
+            Build a perfect relationship between students & universities
+          </h2>
+
+          <p class="text-[#736E6E] text-sm w-[40vw] text-center">
+            Corem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+            vulputate libero et velit interdum, ac aliquet odio mattis. Class
+            aptent taciti sociosqu ad litora torquent per conubia nostra, per
+            inceptos himenaeos.
+          </p>
+          <img src="./img/university/chat.png" alt="" />
+        </div>
+        <!-- FOOTER -->
+        <div
+          class="flex flex-col w-screen bg-[#E1E1E1] p-[1.5rem] sm:p-[3.5rem] md:py-20 md:px-[3rem] lg:px-[8.5rem] lg1:px-[14.5rem]"
+        >
+          <div class="flex flex-col">
+            <img
+              src="./img/home/hirekarma_logo.webp"
+              alt=""
+              class="w-[125px] md:w-[160px] h-[40px] md:h-[53px] cursor-pointer"
+            />
+            <p
+              class="text-[#1C1B1F] text-[15px] md:text-[18px] w-[85vw] md:w-[45vw] my-[12px] md:my-[20px]"
+            >
+              Corem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+              vulputate libero et velit interdum, ac aliquet odio mattis. Class
+              aptent taciti sociosqu ad litora torquent per conubia nostra, per
+              inceptos himenaeos.
+            </p>
+          </div>
+          <div class="grid grid-cols-3 md:grid-cols-7 mt-[20px] gap-[16px]">
+            <ul class="flex flex-col gap-[0.7rem] md:gap-4">
+              <h3
+                class="mt-2 text-[#8860D0] text-[18px] md:text-[20px] font-[500]"
+              >
+                University
+              </h3>
+              <li class="text-[11px] md:text-[15px] font-[600] cursor-pointer">
+                Sign up
+              </li>
+              <li class="text-[11px] md:text-[15px] font-[600] cursor-pointer">
+                Testimony
+              </li>
+              <li class="text-[11px] md:text-[15px] font-[600] cursor-pointer">
+                Contact
+              </li>
+            </ul>
+
+            <ul class="flex flex-col gap-[0.7rem] md:gap-4">
+              <h3
+                class="mt-2 text-[#8860D0] text-[18px] md:text-[20px] font-[500]"
+              >
+                Employee
+              </h3>
+              <li class="text-[11px] md:text-[15px] font-[600] cursor-pointer">
+                Start hiring
+              </li>
+              <li class="text-[11px] md:text-[15px] font-[600] cursor-pointer">
+                Schedule
+              </li>
+              <li class="text-[11px] md:text-[15px] font-[600] cursor-pointer">
+                Call with sales team
+              </li>
+            </ul>
+
+            <ul class="flex flex-col gap-[0.7rem] md:gap-4">
+              <h3
+                class="mt-2 text-[#8860D0] text-[18px] md:text-[20px] font-[500]"
+              >
+                Students
+              </h3>
+              <li class="text-[11px] md:text-[15px] font-[600] cursor-pointer">
+                Support
+              </li>
+              <li class="text-[11px] md:text-[15px] font-[600] cursor-pointer">
+                Login
+              </li>
+              <li class="text-[11px] md:text-[15px] font-[600] cursor-pointer">
+                Sign up
+              </li>
+            </ul>
+
+            <ul class="flex flex-col gap-[0.7rem] md:gap-4 col-span-2">
+              <li
+                class="text-[11px] md:text-[15px] font-[600] cursor-pointer mt-5 md:mt-[54px]"
+              >
+                91+ 7777777777
+              </li>
+              <li class="text-[11px] md:text-[15px] font-[600] cursor-pointer">
+                25, Random address, bhubaneswar odisha pin-777777
+              </li>
+              <li class="text-[11px] md:text-[15px] font-[600] cursor-pointer">
+                Sign up
+              </li>
+            </ul>
+          </div>
+          <div class="flex justify-end gap-6 mt-[40px] md:mt-[50px]">
+            <a href="" class="cursor-pointer">
+              <img
+                src="./img/home/insta.png"
+                alt=""
+                class="w-[1.6rem] md:w-8 h-[1.6rem] md:h-8"
+              />
+            </a>
+            <a href="" class="cursor-pointer">
+              <img
+                src="./img/home/linkedin.png"
+                alt=""
+                class="w-[1.6rem] md:w-8 h-[1.6rem] md:h-8"
+              />
+            </a>
+            <a href="" class="cursor-pointer">
+              <img
+                src="./img/home/fb.png"
+                alt=""
+                class="w-[1.6rem] md:w-8 h-[1.6rem] md:h-8"
+              />
+            </a>
+          </div>
+          <div class="border-t-[2px] border-black hidden md:block mt-[40px]">
+            <div class="mt-[40px] grid grid-cols-5 gap-[2vw]">
+              <div class="flex flex-col gap-4">
+                <h3 class="text-black text-[18px] lg:text-[20px] font-[500]">
+                  Job by location
+                </h3>
+                <p
+                  class="text-black text-[13px] lg:text-[15px] font-[600] cursor-pointer"
+                >
+                  Gorem ipsum dolor
+                </p>
+                <p
+                  class="text-black text-[13px] lg:text-[15px] font-[600] cursor-pointer"
+                >
+                  Gorem ipsum dolor
+                </p>
+                <p
+                  class="text-black text-[13px] lg:text-[15px] font-[600] cursor-pointer"
+                >
+                  Gorem ipsum dolor
+                </p>
+                <p
+                  class="text-black text-[13px] lg:text-[15px] font-[600] cursor-pointer"
+                >
+                  Gorem ipsum dolor
+                </p>
+                <p
+                  class="text-black text-[13px] lg:text-[15px] font-[600] cursor-pointer"
+                >
+                  Gorem ipsum dolor
+                </p>
+                <p
+                  class="text-black text-[13px] lg:text-[15px] font-[600] cursor-pointer"
+                >
+                  Gorem ipsum dolor
+                </p>
+              </div>
+              <div class="flex flex-col gap-4">
+                <h3 class="text-black text-[18px] lg:text-[20px] font-[500]">
+                  Fresher Jobs by location
+                </h3>
+                <p
+                  class="text-black text-[13px] lg:text-[15px] font-[600] cursor-pointer"
+                >
+                  Gorem ipsum dolor
+                </p>
+                <p
+                  class="text-black text-[13px] lg:text-[15px] font-[600] cursor-pointer"
+                >
+                  Gorem ipsum dolor
+                </p>
+                <p
+                  class="text-black text-[13px] lg:text-[15px] font-[600] cursor-pointer"
+                >
+                  Gorem ipsum dolor
+                </p>
+                <p
+                  class="text-black text-[13px] lg:text-[15px] font-[600] cursor-pointer"
+                >
+                  Gorem ipsum dolor
+                </p>
+                <p
+                  class="text-black text-[13px] lg:text-[15px] font-[600] cursor-pointer"
+                >
+                  Gorem ipsum dolor
+                </p>
+                <p
+                  class="text-black text-[13px] lg:text-[15px] font-[600] cursor-pointer"
+                >
+                  Gorem ipsum dolor
+                </p>
+              </div>
+              <div class="flex flex-col gap-4">
+                <h3 class="text-black text-[18px] lg:text-[20px] font-[500]">
+                  IT Jobs by location
+                </h3>
+                <p
+                  class="text-black text-[13px] lg:text-[15px] font-[600] cursor-pointer"
+                >
+                  Gorem ipsum dolor
+                </p>
+                <p
+                  class="text-black text-[13px] lg:text-[15px] font-[600] cursor-pointer"
+                >
+                  Gorem ipsum dolor
+                </p>
+                <p
+                  class="text-black text-[13px] lg:text-[15px] font-[600] cursor-pointer"
+                >
+                  Gorem ipsum dolor
+                </p>
+                <p
+                  class="text-black text-[13px] lg:text-[15px] font-[600] cursor-pointer"
+                >
+                  Gorem ipsum dolor
+                </p>
+                <p
+                  class="text-black text-[13px] lg:text-[15px] font-[600] cursor-pointer"
+                >
+                  Gorem ipsum dolor
+                </p>
+                <p
+                  class="text-black text-[13px] lg:text-[15px] font-[600] cursor-pointer"
+                >
+                  Gorem ipsum dolor
+                </p>
+              </div>
+              <div class="flex flex-col gap-4">
+                <h3 class="text-black text-[18px] lg:text-[20px] font-[500]">
+                  Job by sector
+                </h3>
+                <p
+                  class="text-black text-[13px] lg:text-[15px] font-[600] cursor-pointer"
+                >
+                  Gorem ipsum dolor
+                </p>
+                <p
+                  class="text-black text-[13px] lg:text-[15px] font-[600] cursor-pointer"
+                >
+                  Gorem ipsum dolor
+                </p>
+                <p
+                  class="text-black text-[13px] lg:text-[15px] font-[600] cursor-pointer"
+                >
+                  Gorem ipsum dolor
+                </p>
+                <p
+                  class="text-black text-[13px] lg:text-[15px] font-[600] cursor-pointer"
+                >
+                  Gorem ipsum dolor
+                </p>
+                <p
+                  class="text-black text-[13px] lg:text-[15px] font-[600] cursor-pointer"
+                >
+                  Gorem ipsum dolor
+                </p>
+                <p
+                  class="text-black text-[13px] lg:text-[15px] font-[600] cursor-pointer"
+                >
+                  Gorem ipsum dolor
+                </p>
+              </div>
+              <div class="flex flex-col gap-4">
+                <h3 class="text-black text-[18px] lg:text-[20px] font-[500]">
+                  Job by stram
+                </h3>
+                <p
+                  class="text-black text-[13px] lg:text-[15px] font-[600] cursor-pointer"
+                >
+                  Gorem ipsum dolor
+                </p>
+                <p
+                  class="text-black text-[13px] lg:text-[15px] font-[600] cursor-pointer"
+                >
+                  Gorem ipsum dolor
+                </p>
+                <p
+                  class="text-black text-[13px] lg:text-[15px] font-[600] cursor-pointer"
+                >
+                  Gorem ipsum dolor
+                </p>
+                <p
+                  class="text-black text-[13px] lg:text-[15px] font-[600] cursor-pointer"
+                >
+                  Gorem ipsum dolor
+                </p>
+                <p
+                  class="text-black text-[13px] lg:text-[15px] font-[600] cursor-pointer"
+                >
+                  Gorem ipsum dolor
+                </p>
+                <p
+                  class="text-black text-[13px] lg:text-[15px] font-[600] cursor-pointer"
+                >
+                  Gorem ipsum dolor
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    let swiperClient = new Swiper(".tpo_list", {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      effect: "fade",
+      loop: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+    });
+  </script>
+</html>
