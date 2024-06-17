@@ -1830,6 +1830,14 @@ video {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
+.transition {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
 .transition-all {
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1913,14 +1921,6 @@ video {
     border-radius: 3px;
     background: #8860d0;
   }
-}
-
-.hover\:duration-500:hover {
-  transition-duration: 500ms;
-}
-
-.hover\:ease-in-out:hover {
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @media (min-width: 590px) {
@@ -2516,6 +2516,12 @@ video {
   }
 }
 
+@media (min-width: 1166px) {
+  .sp2\:hidden {
+    display: none;
+  }
+}
+
 @media (min-width: 1200px) {
   .lg\:mt-\[8rem\] {
     margin-top: 8rem;
@@ -2614,5 +2620,11 @@ video {
 
   .lg1\:text-\[14px\] {
     font-size: 14px;
+  }
+}
+
+@media (min-width: 1537px) {
+  .sp1\:flex {
+    display: flex;
   }
 }
